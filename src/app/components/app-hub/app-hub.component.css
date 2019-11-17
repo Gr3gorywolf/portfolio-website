@@ -1,7 +1,7 @@
-.card{
+#tabBar{
   border-radius:25px;
-}
-.more-info-button{
-  margin-top:15px;
-  border-radius:25px;
+  width:98%;
+  margin-left:1%;
+  margin-right:1%;
+  margin-top: 15px
 }

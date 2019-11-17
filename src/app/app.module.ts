@@ -7,6 +7,7 @@ import { ComingSoonComponent } from './components/coming-soon/coming-soon.compon
 import { GregoryComponent } from './components/customsvg/gregory/gregory.component';
 import { AppHubComponent } from './components/app-hub/app-hub.component';
 import { GregoryappsComponent } from './components/customsvg/gregoryapps/gregoryapps.component';
+import { ProjectCardComponent } from './components/app-hub/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { GregoryappsComponent } from './components/customsvg/gregoryapps/gregory
     ComingSoonComponent,
     GregoryComponent,
     AppHubComponent,
-    GregoryappsComponent
+    GregoryappsComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,

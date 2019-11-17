@@ -1,0 +1,138 @@
+[{
+    "name": "Multitube",
+    "description": "Multi modules application that allows you to stream and download videos from youtube and even more!.",
+    "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/mipmap-xxxhdpi/ic_launcher.png",
+    "portrait": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/drawable/logo.png",
+    "platform": 0,
+    "repository": "https://github.com/Gr3gorywolf/Multitube.android",
+    "website": "https://multitube.gregoryc.dev",
+    "primary_color": "#434e56",
+    "accent_color": "#d41c17",
+    "images": [
+      "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/1.jpeg",
+      "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/2.jpeg",
+      "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/3.jpeg",
+      "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/4.jpeg",
+      "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/5.jpeg",
+      "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/6.jpeg",
+      "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/7.jpeg"
+    ],
+    "technologies": [
+      "C#", "Xamarin.android", "TCP Sockets", "Firebase"
+    ]
+  },
+  {
+    "name": "Neon Rom3r",
+    "description": "Aplication that allows you to search and download roms of multiple consoles and even open it directly from the app",
+    "logo": "https://raw.githubusercontent.com/Gr3gorywolf/NeonRom3r/master/Resources/mipmap-xxxhdpi/ic_launcher.png",
+    "portrait": "https://camo.githubusercontent.com/efb022f5afcb8f099725b0b767a40f277f356a62/68747470733a2f2f677233676f7279776f6c662e6769746875622e696f2f4e656f6e526f6d33722f6c6f676f6c617267652e706e67",
+    "platform": 0,
+    "repository": "https://github.com/Gr3gorywolf/NeonRom3r",
+    "website": "https://neonromer.gregoryc.dev",
+    "primary_color": "#434e56",
+    "accent_color": "#08a374",
+    "images": [
+      "https://neonromer.gregoryc.dev/assets/imgs/s17.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s11.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s12.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s5.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s14.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s15.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s16.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s13.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s18.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s10.png"
+    ],
+    "technologies": [
+      "C#", "Xamarin.android", "Firebase"
+    ]
+  },
+  {
+    "name": "Glutter Chat",
+    "description": "Multi server chat application that has bot assistence,server creation/customization and much more!.",
+    "logo": "assets/img/GlutterChatLauncher.png",
+    "portrait": "",
+    "platform": 0,
+    "repository": "https://github.com/Gr3gorywolf/GlutterChatMobile",
+    "website": "http://wtfsapp.herokuapp.com",
+    "primary_color": "white",
+    "accent_color": "#1976d2",
+    "images": [
+
+    ],
+    "technologies": [
+      "Dart", "Flutter", "Firebase"
+    ]
+  },
+  {
+    "name": "NeonRom3r web",
+    "description": "Web aplication that allows you to search and download roms of multiple consoles without ads or download timers",
+    "logo": "https://raw.githubusercontent.com/Gr3gorywolf/NeonRom3r/master/Resources/mipmap-xxxhdpi/ic_launcher_foreground.png",
+    "portrait": "https://neonromer.gregoryc.dev/assets/imgs/Neonrom3rweb.png",
+    "platform": 1,
+    "repository": "https://github.com/Gr3gorywolf/neonrom3r-webpage",
+    "website": "https://neonromer.gregoryc.dev/neonromerweb",
+    "primary_color": "#434e56",
+    "accent_color": "#08a374",
+    "images": [
+
+    ],
+    "technologies": [
+      "HTML", "CSS", "JS", "Angular", "Materialize"
+    ]
+  },
+  {
+    "name": "Multitube webhelper",
+    "description": "An easier way to connect to streamings servers without enter servers ip and ports the only thing that you need to do is scan a QR code!",
+    "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/mipmap-xxxhdpi/ic_launcher_foreground.png",
+    "portrait": "https://multitubewebhelper.gregoryc.dev/img/logo.png",
+    "platform": 1,
+    "repository": "https://github.com/Gr3gorywolf/Multitubewebhelper",
+    "website": "https://multitubewebhelper.gregoryc.dev/",
+    "primary_color": "#434e56",
+    "accent_color": "#d41c17",
+    "images": [
+
+    ],
+    "technologies": [
+      "HTML", "CSS", "JS", "Materialize", "Firebase"
+    ]
+  },
+  {
+    "name": "GlutterChat web",
+    "description": "Web based Multi server chat application that has bot assistence and server creation/customization",
+    "logo": "assets/img/GlutterChatLauncher.png",
+    "portrait": "assets/img/GlutterChatLogo.png",
+    "platform": 1,
+    "repository": "https://github.com/Gr3gorywolf/GlutterChat",
+    "website": "http://wtfsapp.herokuapp.com/",
+    "primary_color": "white",
+    "accent_color": "#1976d2",
+    "images": [
+
+    ],
+    "technologies": [
+      "HTML", "CSS", "JS", "Angular", "Materialize", "Socket.IO", "NodeJs", "Express", "Firebase"
+    ]
+
+  },
+  {
+    "name": "Multitube desktop",
+    "description": "Youtube desktop client that allows you to download/stream media from youtube and also can be controlled with the muultitube mobile app",
+    "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/mipmap-xxxhdpi/ic_launcher_foreground.png",
+    "portrait": "assets/img/multitubedesktop.png",
+    "platform": 2,
+    "repository": "https://github.com/Gr3gorywolf/neonrom3r-webpage",
+    "website": "https://neonromer.gregoryc.dev/neonromerweb",
+    "primary_color": "#434e56",
+    "accent_color": "#d41c17",
+    "images": [
+
+    ],
+    "technologies": [
+      "HTML", "CSS", "JS", "Electron", "Materialize", "TCP Sockets"
+    ]
+  }
+
+
+]

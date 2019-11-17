@@ -1,0 +1,138 @@
+[{
+    "name": "Multitube",
+    "description": "Aplicación de módulos múltiples que te permite reproducir y descargar videos de youtube y mucho más!.",
+    "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/mipmap-xxxhdpi/ic_launcher.png",
+    "portrait": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/drawable/logo.png",
+    "platform": 0,
+    "repository": "https://github.com/Gr3gorywolf/Multitube.android",
+    "website": "https://multitube.gregoryc.dev",
+    "primary_color": "#434e56",
+    "accent_color": "#d41c17",
+    "images": [
+      "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/1.jpeg",
+      "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/2.jpeg",
+      "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/3.jpeg",
+      "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/4.jpeg",
+      "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/5.jpeg",
+      "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/6.jpeg",
+      "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/7.jpeg"
+    ],
+    "technologies": [
+      "C#", "Xamarin.android", "TCP Sockets", "Firebase"
+    ]
+  },
+  {
+    "name": "Neon Rom3r",
+    "description": "Aplicación que te permite buscar y descargar roms de múltiples consolas e incluso abrirla directamente desde la aplicación",
+    "logo": "https://raw.githubusercontent.com/Gr3gorywolf/NeonRom3r/master/Resources/mipmap-xxxhdpi/ic_launcher.png",
+    "portrait": "https://camo.githubusercontent.com/efb022f5afcb8f099725b0b767a40f277f356a62/68747470733a2f2f677233676f7279776f6c662e6769746875622e696f2f4e656f6e526f6d33722f6c6f676f6c617267652e706e67",
+    "platform": 0,
+    "repository": "https://github.com/Gr3gorywolf/NeonRom3r",
+    "website": "https://neonromer.gregoryc.dev",
+    "primary_color": "#434e56",
+    "accent_color": "#08a374",
+    "images": [
+      "https://neonromer.gregoryc.dev/assets/imgs/s17.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s11.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s12.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s5.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s14.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s15.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s16.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s13.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s18.png",
+      "https://neonromer.gregoryc.dev/assets/imgs/s10.png"
+    ],
+    "technologies": [
+      "C#", "Xamarin.android", "Firebase"
+    ]
+  },
+  {
+    "name": "Glutter Chat",
+    "description": "Aplicación de chat multiservidor que tiene asistencia de bot, creación / personalización de servidores y mucho más.",
+    "logo": "assets/img/GlutterChatLauncher.png",
+    "portrait": "",
+    "platform": 0,
+    "repository": "https://github.com/Gr3gorywolf/GlutterChatMobile",
+    "website": "http://wtfsapp.herokuapp.com",
+    "primary_color": "white",
+    "accent_color": "#1976d2",
+    "images": [
+
+    ],
+    "technologies": [
+      "Dart", "Flutter", "Firebase"
+    ]
+  },
+  {
+    "name": "NeonRom3r web",
+    "description": "Aplicación web que le permite buscar y descargar roms de varias consolas sin anuncios ni descargar temporizadores",
+    "logo": "https://raw.githubusercontent.com/Gr3gorywolf/NeonRom3r/master/Resources/mipmap-xxxhdpi/ic_launcher_foreground.png",
+    "portrait": "https://neonromer.gregoryc.dev/assets/imgs/Neonrom3rweb.png",
+    "platform": 1,
+    "repository": "https://github.com/Gr3gorywolf/neonrom3r-webpage",
+    "website": "https://neonromer.gregoryc.dev/neonromerweb",
+    "primary_color": "#434e56",
+    "accent_color": "#08a374",
+    "images": [
+
+    ],
+    "technologies": [
+      "HTML", "CSS", "JS", "Angular", "Materialize"
+    ]
+  },
+  {
+    "name": "Multitube webhelper",
+    "description": "Una forma más fácil de conectarse a el de reproduccion de multitube sin ingresar los servidores ip y puertos ¡lo único que debe hacer es escanear un código QR!",
+    "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/mipmap-xxxhdpi/ic_launcher_foreground.png",
+    "portrait": "https://multitubewebhelper.gregoryc.dev/img/logo.png",
+    "platform": 1,
+    "repository": "https://github.com/Gr3gorywolf/Multitubewebhelper",
+    "website": "https://multitubewebhelper.gregoryc.dev/",
+    "primary_color": "#434e56",
+    "accent_color": "#d41c17",
+    "images": [
+
+    ],
+    "technologies": [
+      "HTML", "CSS", "JS", "Materialize", "Firebase"
+    ]
+  },
+  {
+    "name": "GlutterChat web",
+    "description": "Aplicación de chat multiservidor basada en web que tiene asistencia de bot y creación / personalización de servidores",
+    "logo": "assets/img/GlutterChatLauncher.png",
+    "portrait": "assets/img/GlutterChatLogo.png",
+    "platform": 1,
+    "repository": "https://github.com/Gr3gorywolf/GlutterChat",
+    "website": "http://wtfsapp.herokuapp.com/",
+    "primary_color": "white",
+    "accent_color": "#1976d2",
+    "images": [
+
+    ],
+    "technologies": [
+      "HTML", "CSS", "JS", "Angular", "Materialize", "Socket.IO", "NodeJs", "Express", "Firebase"
+    ]
+
+  },
+  {
+    "name": "Multitube desktop",
+    "description": "Cliente de escritorio de Youtube que le permite descargar / reproducir contenido multimedia desde YouTube y también puede controlarse con la aplicación móvil de multitube",
+    "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/mipmap-xxxhdpi/ic_launcher_foreground.png",
+    "portrait": "assets/img/multitubedesktop.png",
+    "platform": 2,
+    "repository": "https://github.com/Gr3gorywolf/neonrom3r-webpage",
+    "website": "https://neonromer.gregoryc.dev/neonromerweb",
+    "primary_color": "#434e56",
+    "accent_color": "#d41c17",
+    "images": [
+
+    ],
+    "technologies": [
+      "HTML", "CSS", "JS", "Electron", "Materialize", "TCP Sockets"
+    ]
+  }
+
+
+]
