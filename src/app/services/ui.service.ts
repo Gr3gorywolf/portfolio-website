@@ -5,8 +5,9 @@ import { Injectable } from '@angular/core';
 })
 export class UiService {
 
-  navbarVisible=false;
-  navbarTitle="";
+  public navbarVisible=false;
+  public navbarTitle="";
+  public backgroundColor="#ff914d"
   constructor() {
 
 
