@@ -1,20 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { MaterializeModule } from "angular2-materialize";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 import { GregoryComponent } from './components/customsvg/gregory/gregory.component';
+import { AppHubComponent } from './components/app-hub/app-hub.component';
+import { GregoryappsComponent } from './components/customsvg/gregoryapps/gregoryapps.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComingSoonComponent,
-    GregoryComponent
+    GregoryComponent,
+    AppHubComponent,
+    GregoryappsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterializeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

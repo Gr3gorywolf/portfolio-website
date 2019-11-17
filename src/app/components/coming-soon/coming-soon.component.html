@@ -1,9 +1,20 @@
 <div class="background"></div>
-<div>
-  <h4 class="white-text center" style="position:fixed;bottom:0;width:100%;z-index:20;">Proximamente.....</h4>
-  <div class="centered ">
+<div class="content">
+
+  <div class="centered " style="margin-bottom:290px;margin-top:10px;">
     <div class="animated fadeInUp slow">
       <app-gregory></app-gregory>
     </div>
   </div>
+  <h4 class="white-text center" style="position: fixed;bottom:0px;width:100%;"><div>
+      <h5 class="white-text center" style="">Where you wanna go?</h5>
+    <button class="btn waves-effect waves-light white pillbtn animated fadeInLeft ">Personal Portfolio
+      <i class="material-icons right">arrow_forward</i>
+    </button>
+    <button class="btn waves-effect waves-light white pillbtn animated fadeInLeft delay-1s" [routerLink]="['/apps']" routerLinkActive="router-link-active" >App hub
+      <i class="material-icons right">arrow_forward</i>
+    </button>
+
+  </div></h4>
 </div>
+
