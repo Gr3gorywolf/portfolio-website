@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UiService } from './services/ui.service';
+import { ProjectService } from './services/project.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { UiService } from './services/ui.service';
 })
 export class AppComponent {
   title = 'Gregory Cabral';
-  constructor(public UI:UiService){
-
+  constructor(public UI:UiService,public projects:ProjectService){
+           projects.init();
   }
 }

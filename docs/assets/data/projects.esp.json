@@ -122,7 +122,7 @@
     "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/mipmap-xxxhdpi/ic_launcher_foreground.png",
     "portrait": "assets/img/multitubedesktop.png",
     "platform": 2,
-    "repository": "https://github.com/Gr3gorywolf/neonrom3r-webpage",
+    "repository": "https://github.com/Gr3gorywolf/multitube-desktop",
     "website": "https://neonromer.gregoryc.dev/neonromerweb",
     "primary_color": "#434e56",
     "accent_color": "#d41c17",

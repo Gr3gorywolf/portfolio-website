@@ -1,56 +1,48 @@
 
-  <div class="animated fadeInDown slow" style="margin-top:35px;margin-bottom:35px;z-index:99;height:350px;">
-    <app-gregoryapps></app-gregoryapps>
-  </div>
 
 
-  <div style="margin-top: 10px;">
+<div class="animated fadeInDown slow" style="margin-top:35px;margin-bottom:35px;z-index:99;height:350px;">
+
+  <app-gregoryapps></app-gregoryapps>
+</div>
 
 
-
-    <div class="row" style="width:100%;">
-      <div class="col s12 animated fadeInLeft">
-        <ul id="tabBar" class="tabs tabs-fixed-width" materialize="tabs">
-          <li class="tab col s3" (click)="tabClicked()"><a href="#test1" class="orange-text">Mobile</a></li>
-          <li class="tab col s3" (click)="tabClicked()"><a href="#test2" class="orange-text">Web</a></li>
-          <li class="tab col s3" (click)="tabClicked()"><a href="#test3" class="orange-text">Desktop</a></li>
-          <div class="indicator grey lighten-2" style="z-index:1;height:5px;border-radius:15px;"></div>
-        </ul>
-      </div>
-      <div id="test1" class="col s12">
-
-        <div class="row animated fadeInUpBig ">
-          <div class="col s12 m6" *ngFor="let project of this.projects">
-
-            <app-project-card [project]="project" *ngIf="project.platform==0"></app-project-card>
-          </div>
-
-        </div>
-      </div>
-      <div id="test2" class="col s12">
-
-        <div class="row animated fadeInUpBig ">
-          <div class="col s12 m6 left" *ngFor="let project of this.projects">
-
-            <app-project-card [project]="project" *ngIf="project.platform==1"></app-project-card>
-          </div>
-
-        </div>
-
-      </div>
-      <div id="test3" class="col s12">
-        <div class="row animated fadeInUpBig ">
-          <div class="col s12 m6" *ngFor="let project of this.projects">
-
-            <app-project-card [project]="project" *ngIf="project.platform==2"></app-project-card>
+<div style="margin-top: 10px;">
+  <div class="row" style="width:100%;">
+    <div class="col s12 animated fadeInLeft" style="margin-bottom:15px">
+      <ul id="tabBar" class="tabs tabs-fixed-width" materialize="tabs">
+        <li class="tab col s3" (click)="tabClicked()"><a href="#tab1" class="orange-text">Mobile</a></li>
+        <li class="tab col s3" (click)="tabClicked()"><a href="#tab2" class="orange-text">Web</a></li>
+        <li class="tab col s3" (click)="tabClicked()"><a href="#tab3" class="orange-text">Desktop</a></li>
+        <div class="indicator grey lighten-2"></div>
+      </ul>
+    </div>
+    <div id="tab1" class="col s12" style="min-height:500px;">
+      <div class="row animated fadeInUpBig ">
+        <div *ngFor="let project of this.projectService.projects">
+          <div class="col s12 m6" *ngIf="project.platform==0">
+            <app-project-card [project]="project"></app-project-card>
           </div>
         </div>
-
       </div>
     </div>
-
-
-
-
-
+    <div id="tab2" class="col s12" style="min-height:500px;">
+      <div class="row animated fadeInUpBig ">
+        <div *ngFor="let project of this.projectService.projects">
+          <div class="col s12 m6" *ngIf="project.platform==1">
+            <app-project-card [project]="project"></app-project-card>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="tab3" class="col s12" style="min-height:500px;">
+      <div class="row animated fadeInUpBig ">
+        <div *ngFor="let project of this.projectService.projects">
+          <div class="col s12 m6" *ngIf="project.platform==2">
+            <app-project-card [project]="project"></app-project-card>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>

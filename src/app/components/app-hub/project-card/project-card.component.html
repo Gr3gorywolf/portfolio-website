@@ -16,7 +16,7 @@
       <p>{{ this.project.description }}</p>
 
          <h6 class="center">
-          <a class="btn waves-effect waves-green white  more-info-button center" [ngStyle]="{color: project.accent_color}" >more
+          <a class="btn waves-effect waves-green white  more-info-button center" [routerLink]="['/app/'+getRepositoryName()]" routerLinkActive="router-link-active"   [ngStyle]="{color: project.accent_color}" >more
               info <i class="material-icons right">arrow_forward</i></a>
             </h6>
     </div>

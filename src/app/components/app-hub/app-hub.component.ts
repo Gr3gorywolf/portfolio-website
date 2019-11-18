@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UiService } from 'src/app/services/ui.service';
 import { AppInfo } from 'src/app/models/appInfo.js';
-import projectsEng from '../../../assets/data/projects.eng.json';
-import projectsEsp from '../../../assets/data/projects.esp.json';
+import { ProjectService } from 'src/app/services/project.service';
+
 declare var $:any;
 @Component({
   selector: 'app-app-hub',
@@ -11,12 +11,12 @@ declare var $:any;
 })
 export class AppHubComponent implements OnInit {
 
-  constructor(public UI:UiService) { }
-  projects:Array<AppInfo>=[];
+  constructor(public UI:UiService,public projectService:ProjectService) { }
+ 
   ngOnInit() {
-    this.projects=projectsEsp;
+    
     setTimeout(() => {
-      this.UI.navbarTitle = "App Hub";
+      this.UI.navbarTitle = "My projects";
       this.UI.navbarVisible = true;
     }, 50);
 
@@ -26,7 +26,7 @@ export class AppHubComponent implements OnInit {
   }
   tabClicked(){
     $([document.documentElement, document.body]).animate({
-      scrollTop: $("#tabBar").offset().top-15
+      scrollTop: $("#tabBar").offset().top-90
   }, 120);
   }
 

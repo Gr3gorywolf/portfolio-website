@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'app-coming-soon',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComingSoonComponent implements OnInit {
 
-  constructor() { }
+  constructor(public UI:UiService) { }
 
   ngOnInit() {
+    this.UI.navbarVisible = false;
   }
 
 }

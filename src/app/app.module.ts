@@ -8,6 +8,8 @@ import { GregoryComponent } from './components/customsvg/gregory/gregory.compone
 import { AppHubComponent } from './components/app-hub/app-hub.component';
 import { GregoryappsComponent } from './components/customsvg/gregoryapps/gregoryapps.component';
 import { ProjectCardComponent } from './components/app-hub/project-card/project-card.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProjectInfoComponent } from './components/app-hub/project-info/project-info.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ProjectCardComponent } from './components/app-hub/project-card/project-
     GregoryComponent,
     AppHubComponent,
     GregoryappsComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    NavbarComponent,
+    ProjectInfoComponent
   ],
   imports: [
     BrowserModule,

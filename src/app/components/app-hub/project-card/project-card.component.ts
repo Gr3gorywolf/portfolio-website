@@ -1,4 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { AppInfo } from 'src/app/models/appInfo';
 
 @Component({
@@ -7,10 +7,18 @@ import { AppInfo } from 'src/app/models/appInfo';
   styleUrls: ['./project-card.component.css']
 })
 export class ProjectCardComponent implements OnInit {
-
+  @Input() project: AppInfo;
   constructor() { }
 
   ngOnInit() {
   }
-@Input() project:AppInfo;
+
+  getRepositoryName() {
+    var splittedRoute = this.project.repository.split('/');
+    return splittedRoute[splittedRoute.length-1];
+ }
+
+
+
+
 }

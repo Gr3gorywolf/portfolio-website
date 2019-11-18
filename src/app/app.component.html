@@ -1,4 +1,6 @@
 <div class="background" [ngStyle]="{'background-color': this.UI.backgroundColor}"></div>
-<div style="z-index:99;">
-<router-outlet></router-outlet>
+<app-navbar></app-navbar>
+<div style="z-index:99;margin-top:95px;">
+ 
+  <router-outlet></router-outlet>
 </div>

@@ -9,6 +9,25 @@
   z-index:0;
 }
 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.floating-animation-slow {
+	animation-name: float;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction:normal;
+}
+
 
 @media(max-width:600px){
   .pillbtn{
