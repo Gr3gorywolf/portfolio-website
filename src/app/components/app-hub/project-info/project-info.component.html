@@ -1,0 +1,42 @@
+<div class="parallax-container" style="height:270px;">
+  <div class="parallax" materialize="parallax">
+    <div></div>
+    <app-gregoryface></app-gregoryface>
+
+  </div>
+</div>
+<div class="section " style="border-radius:20px;" [ngStyle]="{'background-color': this.currentApp.primary_color}">
+  <div class="card  floating-card white ">
+    <div class="card-content">
+      <h6 class="center">
+        <img class="mobile-logo" src="{{ this.currentApp.logo }}">
+      </h6>
+      <h4 class="header center" [ngStyle]="{'color': this.currentApp.accent_color}">{{ this.currentApp.name }}</h4>
+      <p class="center">{{ this.currentApp.description }}</p>
+
+      <h6 class="center">
+        <div class="chip white-text" [ngStyle]="{'background-color': this.currentApp.accent_color}"
+          *ngFor="let tech of this.currentApp.technologies ">
+          {{ tech }}
+        </div>
+      </h6>
+
+      <h6 class="center">
+          <a class="btn download-button waves-effect waves-green white  more-info-button center"
+          [ngStyle]="{color: this.currentApp.accent_color}">Download
+          <i class="material-icons right">file_download</i></a>
+        </h6>
+    </div>
+  </div>
+
+  <div class="white-text" style="margin-left:10%; margin-right:10%;max-width:100%;">
+
+    <div NgxMd [path]="getMdLink()" class="markdown"></div>
+  </div>
+
+</div>
+<div class="parallax-container" style="height:270px;">
+    <div class="parallax" style="z-index:2;" materialize="parallax">
+
+    </div>
+  </div>

@@ -1,0 +1,14 @@
+.floating-card{
+  margin-top:-180px;
+  border-radius:25px;
+  margin-left:10%;
+  margin-right:10%;
+
+}
+.download-button{
+  margin-top:25px;
+  border-radius:25px;
+}
+.markdown img{
+  width:5px;
+}

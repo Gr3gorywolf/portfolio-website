@@ -1,22 +1,19 @@
-
-
-
 <div class="animated fadeInDown slow" style="margin-top:35px;margin-bottom:35px;z-index:99;height:350px;">
 
   <app-gregoryapps></app-gregoryapps>
 </div>
 
 
+
 <div style="margin-top: 10px;">
-  <div class="row" style="width:100%;">
-    <div class="col s12 animated fadeInLeft" style="margin-bottom:15px">
-      <ul id="tabBar" class="tabs tabs-fixed-width" materialize="tabs">
-        <li class="tab col s3" (click)="tabClicked()"><a href="#tab1" class="orange-text">Mobile</a></li>
-        <li class="tab col s3" (click)="tabClicked()"><a href="#tab2" class="orange-text">Web</a></li>
-        <li class="tab col s3" (click)="tabClicked()"><a href="#tab3" class="orange-text">Desktop</a></li>
-        <div class="indicator grey lighten-2"></div>
-      </ul>
+  <div class="row" style="width:100%;z-index:50;">
+
+    <div class="col s12" >
+      <h6 class="center"><i class="material-icons center white-text" style="font-size:85px;">phone_android</i></h6>
+      <h4 class="white-text center">Mobile Apps</h4>
     </div>
+
+
     <div id="tab1" class="col s12" style="min-height:500px;">
       <div class="row animated fadeInUpBig ">
         <div *ngFor="let project of this.projectService.projects">
@@ -26,6 +23,12 @@
         </div>
       </div>
     </div>
+
+    <div class="col s12" style="margin-top:45px">
+      <h6 class="center"><i class="material-icons center white-text" style="font-size:85px;"> code</i></h6>
+      <h4 class="white-text center">Web apps and landing pages</h4>
+    </div>
+
     <div id="tab2" class="col s12" style="min-height:500px;">
       <div class="row animated fadeInUpBig ">
         <div *ngFor="let project of this.projectService.projects">
@@ -35,6 +38,12 @@
         </div>
       </div>
     </div>
+
+    <div class="col s12" style="margin-top:45px">
+      <h6 class="center"><i class="material-icons center white-text" style="font-size:85px;"> laptop</i></h6>
+      <h4 class="white-text center">Desktop Apps</h4>
+    </div>
+
     <div id="tab3" class="col s12" style="min-height:500px;">
       <div class="row animated fadeInUpBig ">
         <div *ngFor="let project of this.projectService.projects">
@@ -44,5 +53,6 @@
         </div>
       </div>
     </div>
+
   </div>
 </div>

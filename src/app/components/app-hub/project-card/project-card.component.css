@@ -5,3 +5,10 @@
   margin-top:15px;
   border-radius:25px;
 }
+.mobile-logo{
+  height:70px;
+  width:70px;
+  display: none;
+  margin-left:calc(50% - 35px);
+  margin-right:calc(50% - 35px);
+}

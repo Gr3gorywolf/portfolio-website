@@ -17,9 +17,14 @@ export class ProjectInfoComponent implements OnInit {
       var splittedRoute=this.router.url.split("/");
       this.currentApp=this.projects.getProjectByRepo( splittedRoute[splittedRoute.length-1]);
       this.Ui.navbarTitle=this.currentApp.name;
-      this.Ui.backgroundColor=this.currentApp.primary_color;
+
     }, 50);
-    
+
   }
+  getMdLink(){
+    var splittedRoute=this.currentApp.repository.split("/");
+     return `https://raw.githubusercontent.com/${splittedRoute[3]}/${splittedRoute[4]}/master/README.md`;
+  }
+
 
 }

@@ -10,7 +10,9 @@ import { GregoryappsComponent } from './components/customsvg/gregoryapps/gregory
 import { ProjectCardComponent } from './components/app-hub/project-card/project-card.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProjectInfoComponent } from './components/app-hub/project-info/project-info.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { GregoryfaceComponent } from './components/customsvg/gregoryface/gregoryface.component';
+import { NgxMdModule } from 'ngx-md';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,12 +22,15 @@ import { ProjectInfoComponent } from './components/app-hub/project-info/project-
     GregoryappsComponent,
     ProjectCardComponent,
     NavbarComponent,
-    ProjectInfoComponent
+    ProjectInfoComponent,
+    GregoryfaceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterializeModule
+    MaterializeModule,
+    HttpClientModule,
+    NgxMdModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

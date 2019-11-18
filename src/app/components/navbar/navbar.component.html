@@ -1,12 +1,12 @@
 <nav *ngIf="UI.navbarVisible" style="position: fixed;top:0;z-index:120;">
-  
+
   <div class="nav-wrapper white">
-    <a  class="brand-logo center orange-text">{{UI.navbarTitle}}</a>
+    <a  class="brand-logo center orange-text truncate">{{UI.navbarTitle}}</a>
     <a href="#" materialize="sideNav" data-activates="mobile-demo"
       class="button-collapse show-on-medium-and-up orange-text">
       <i class="material-icons">menu</i></a>
   </div>
- 
+
 </nav>
 <ul class="side-nav " id="mobile-demo">
         <li><a  (click)="closeSideMenu()" class="orange-text"><i

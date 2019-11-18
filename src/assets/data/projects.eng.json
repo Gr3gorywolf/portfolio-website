@@ -19,6 +19,12 @@
     ],
     "technologies": [
       "C#", "Xamarin.android", "TCP Sockets", "Firebase"
+    ],
+    "downloadLinks":[
+      {
+        "title":"Android",
+        "link":"https://gr3gorywolf.github.io/getromdownload/youtubepc.html"
+      }
     ]
   },
   {
@@ -45,6 +51,12 @@
     ],
     "technologies": [
       "C#", "Xamarin.android", "Firebase"
+    ],
+    "downloadLinks":[
+      {
+        "title":"Android",
+        "link":"https://github.com/Gr3gorywolf/NeonRom3r/raw/master/docs/GR3apps.neonrom3r.apk"
+      }
     ]
   },
   {
@@ -62,6 +74,12 @@
     ],
     "technologies": [
       "Dart", "Flutter", "Firebase"
+    ],
+    "downloadLinks":[
+      {
+        "title":"Android",
+        "link":"https://gr3gorywolf.github.io/getromdownload/glutterchat"
+      }
     ]
   },
   {
@@ -79,7 +97,8 @@
     ],
     "technologies": [
       "HTML", "CSS", "JS", "Angular", "Materialize"
-    ]
+    ],
+    "downloadLinks":[]
   },
   {
     "name": "Multitube webhelper",
@@ -96,7 +115,8 @@
     ],
     "technologies": [
       "HTML", "CSS", "JS", "Materialize", "Firebase"
-    ]
+    ],
+    "downloadLinks":[]
   },
   {
     "name": "GlutterChat web",
@@ -113,7 +133,8 @@
     ],
     "technologies": [
       "HTML", "CSS", "JS", "Angular", "Materialize", "Socket.IO", "NodeJs", "Express", "Firebase"
-    ]
+    ],
+    "downloadLinks":[]
 
   },
   {
@@ -131,6 +152,20 @@
     ],
     "technologies": [
       "HTML", "CSS", "JS", "Electron", "Materialize", "TCP Sockets"
+    ],
+    "downloadLinks":[
+      {
+        "title":"Mac os X (x64)",
+        "link":"https://mega.nz/#!xFoVwJhD!UOlNWHd9RrKg_dCivNhB8801aWvI-P-RSvf5hqO3lYM"
+      },
+      {
+        "title":"Windows (x86,x64)",
+        "link":"https://mega.nz/#!MEpx3B5Z!eu1VYu3UIYmaq6Budg-8TbJqSzhuSac9Uh26Q54X8oo"
+      },
+      {
+        "title":"Linux (x86,x64)",
+        "link":"https://mega.nz/#!ENwT2DCb!OsyTGp_kPfMDGerKACg5knaTdTP2G4jTfAh0hNXq9Sk"
+      }
     ]
   }
 

@@ -10,5 +10,11 @@ export class AppInfo{
   accent_color:string = "";
   images:Array<string>=[]
   technologies:Array<string>=[]
+  downloadLinks:Array<DownloadData>=[];
 
+}
+
+class DownloadData{
+  title:string="";
+  link:string="";
 }
