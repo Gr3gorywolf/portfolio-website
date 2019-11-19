@@ -15,3 +15,11 @@
   margin-right: 32%;
 }
 
+
+@media(max-width:600px){
+  .pillbtn{
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}

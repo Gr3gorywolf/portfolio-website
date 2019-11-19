@@ -3,7 +3,8 @@ import { AppInfo } from 'src/app/models/appInfo';
 import { Router } from '@angular/router';
 import { ProjectService } from 'src/app/services/project.service';
 import { UiService } from 'src/app/services/ui.service';
-
+import { HttpClient } from '@angular/common/http';
+declare var $:any;
 @Component({
   selector: 'app-project-info',
   templateUrl: './project-info.component.html',
@@ -11,13 +12,14 @@ import { UiService } from 'src/app/services/ui.service';
 })
 export class ProjectInfoComponent implements OnInit {
   currentApp:AppInfo;
-  constructor(public router:Router,public projects:ProjectService,public Ui:UiService) { }
+  commits:Array<any>=null;
+  constructor(public router:Router,public projects:ProjectService,public Ui:UiService,public client:HttpClient) { }
   ngOnInit() {
     setTimeout(() => {
       var splittedRoute=this.router.url.split("/");
       this.currentApp=this.projects.getProjectByRepo( splittedRoute[splittedRoute.length-1]);
       this.Ui.navbarTitle=this.currentApp.name;
-
+      this.loadCommits();
     }, 50);
 
   }
@@ -25,6 +27,25 @@ export class ProjectInfoComponent implements OnInit {
     var splittedRoute=this.currentApp.repository.split("/");
      return `https://raw.githubusercontent.com/${splittedRoute[3]}/${splittedRoute[4]}/master/README.md`;
   }
+   mdLoaded(event){
+     console.log("xd")
+      $("#about").css({
+        "width": "0px",
+        "height": "0px"
+    });
+   }
 
+   loadCommits() {
+    var splittedRoute = this.currentApp.repository.split('/');
+    this.client.get(`https://api.github.com/repos/${splittedRoute[splittedRoute.length - 2]}/${splittedRoute[splittedRoute.length - 1]}/commits`)
+      .subscribe((data: Array<any>) => {
+        if (data.length > 0) {
+              this.commits=data;
+        }
+      });
+
+
+
+  }
 
 }

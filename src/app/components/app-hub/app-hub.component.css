@@ -11,3 +11,23 @@
   height:5px;
   border-radius:15px;
 }
+
+@keyframes floatfr {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-15px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.floatinganimation {
+	animation-name: floatfr;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-direction:normal;
+}
+

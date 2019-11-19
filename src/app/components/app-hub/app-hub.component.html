@@ -1,58 +1,39 @@
-<div class="animated fadeInDown slow" style="margin-top:35px;margin-bottom:35px;z-index:99;height:350px;">
 
-  <app-gregoryapps></app-gregoryapps>
+
+
+<div class="parallax-container" style="height:100vh;margin-top:-30px;">
+    <div class="parallax "  materialize="parallax">
+      <div class="animated fadeInDown slow" style="height:65%;">
+          <app-gregoryapps></app-gregoryapps>
+      </div>
+       <h5 class="center white-text" style="margin-left:8%;">Scroll to see the projects</h5>
+      <h6 class="center " style="margin-left:8%;"> <i class="material-icons white-text floatinganimation " style="font-size:80px;">arrow_downward</i></h6>
+
+    </div>
 </div>
 
 
 
-<div style="margin-top: 10px;">
+
+
+
+<div class="section" style="background-color:#5271ff;border-radius:25px;" >
   <div class="row" style="width:100%;z-index:50;">
-
-    <div class="col s12" >
-      <h6 class="center"><i class="material-icons center white-text" style="font-size:85px;">phone_android</i></h6>
-      <h4 class="white-text center">Mobile Apps</h4>
+    <div *ngFor="let cat of categories;let i = index">
+      <div class="col s12" style="margin-top:50px;" >
+      <h6 class="center"><i class="material-icons center white-text" style="font-size:85px;">{{ cat.icon }}</i></h6>
+      <h4 class="white-text center">{{ cat.title }}</h4>
     </div>
-
-
     <div id="tab1" class="col s12" style="min-height:500px;">
       <div class="row animated fadeInUpBig ">
         <div *ngFor="let project of this.projectService.projects">
-          <div class="col s12 m6" *ngIf="project.platform==0">
+          <div class="col s12 m6" *ngIf="project.platform==i">
             <app-project-card [project]="project"></app-project-card>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="col s12" style="margin-top:45px">
-      <h6 class="center"><i class="material-icons center white-text" style="font-size:85px;"> code</i></h6>
-      <h4 class="white-text center">Web apps and landing pages</h4>
-    </div>
-
-    <div id="tab2" class="col s12" style="min-height:500px;">
-      <div class="row animated fadeInUpBig ">
-        <div *ngFor="let project of this.projectService.projects">
-          <div class="col s12 m6" *ngIf="project.platform==1">
-            <app-project-card [project]="project"></app-project-card>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s12" style="margin-top:45px">
-      <h6 class="center"><i class="material-icons center white-text" style="font-size:85px;"> laptop</i></h6>
-      <h4 class="white-text center">Desktop Apps</h4>
-    </div>
-
-    <div id="tab3" class="col s12" style="min-height:500px;">
-      <div class="row animated fadeInUpBig ">
-        <div *ngFor="let project of this.projectService.projects">
-          <div class="col s12 m6" *ngIf="project.platform==2">
-            <app-project-card [project]="project"></app-project-card>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
 
   </div>
 </div>

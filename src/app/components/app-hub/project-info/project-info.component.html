@@ -5,8 +5,9 @@
 
   </div>
 </div>
-<div class="section " style="border-radius:20px;" [ngStyle]="{'background-color': this.currentApp.primary_color}">
-  <div class="card  floating-card white ">
+<div class="section " style="border-radius:20px;background-color:#5271ff">
+
+  <div class="card  floating-card white animated slideInUp">
     <div class="card-content">
       <h6 class="center">
         <img class="mobile-logo" src="{{ this.currentApp.logo }}">
@@ -21,22 +22,27 @@
         </div>
       </h6>
 
-      <h6 class="center">
-          <a class="btn download-button waves-effect waves-green white  more-info-button center"
+      <h6 class="center" *ngIf="this.currentApp.platform!=1">
+        <a class="btn download-button waves-effect waves-green white  more-info-button center"
           [ngStyle]="{color: this.currentApp.accent_color}">Download
           <i class="material-icons right">file_download</i></a>
-        </h6>
+      </h6>
     </div>
   </div>
 
-  <div class="white-text" style="margin-left:10%; margin-right:10%;max-width:100%;">
 
-    <div NgxMd [path]="getMdLink()" class="markdown"></div>
-  </div>
+<div class="content">
+  <h6 class="center">
+    <h3 class="white-text"> Commits history</h3>
+    <app-timeline [commits]="this.commits"></app-timeline>
+
+
+  </h6>
 
 </div>
+</div>
 <div class="parallax-container" style="height:270px;">
-    <div class="parallax" style="z-index:2;" materialize="parallax">
+  <div class="parallax" style="z-index:2;" materialize="parallax">
 
-    </div>
   </div>
+</div>

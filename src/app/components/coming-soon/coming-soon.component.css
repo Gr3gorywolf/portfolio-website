@@ -28,11 +28,3 @@
 	animation-direction:normal;
 }
 
-
-@media(max-width:600px){
-  .pillbtn{
-    width:90%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}

@@ -9,6 +9,15 @@
   margin-top:25px;
   border-radius:25px;
 }
-.markdown img{
-  width:5px;
+
+.markdown a{
+  color:white;
+}
+.markdown a{
+  color:white;
+}
+.content{
+  margin-left: 5%;
+  margin-right:5%;
+  width:90%;
 }

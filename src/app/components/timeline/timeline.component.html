@@ -1,0 +1,15 @@
+<div class="timeline" *ngIf="this.commits!=null">
+    <div class="timeline-event" *ngFor="let comm of this.commits">
+        <div class="card timeline-content " style="border-radius:45px;">
+
+          <div class="card-content">
+              <img class="r circle left" style="height:60px;width:60px;" src="{{ comm.author.avatar_url  }}">
+            <span class="card-title  grey-text text-darken-4 ">{{ comm.commit.author.date |date }}</span>
+            <p class="truncate">{{ comm.commit.message }} <br>
+             </p>
+             <a href="{{ comm.html_url }}" target="_blank" style="margin-top:25px;">See commit</a>
+          </div>
+        </div>
+        <div class="timeline-badge orange white-text"><i class="material-icons">adjust</i></div>
+      </div>
+  </div>

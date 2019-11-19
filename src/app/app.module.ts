@@ -13,6 +13,7 @@ import { ProjectInfoComponent } from './components/app-hub/project-info/project-
 import { HttpClientModule } from '@angular/common/http';
 import { GregoryfaceComponent } from './components/customsvg/gregoryface/gregoryface.component';
 import { NgxMdModule } from 'ngx-md';
+import { TimelineComponent } from './components/timeline/timeline.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { NgxMdModule } from 'ngx-md';
     ProjectCardComponent,
     NavbarComponent,
     ProjectInfoComponent,
-    GregoryfaceComponent
+    GregoryfaceComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
