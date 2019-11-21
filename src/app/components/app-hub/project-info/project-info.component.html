@@ -14,7 +14,6 @@
       </h6>
       <h4 class="header center" [ngStyle]="{'color': this.currentApp.accent_color}">{{ this.currentApp.name }}</h4>
       <p class="center">{{ this.currentApp.description }}</p>
-
       <h6 class="center">
         <div class="chip white-text" [ngStyle]="{'background-color': this.currentApp.accent_color}"
           *ngFor="let tech of this.currentApp.technologies ">
@@ -24,25 +23,45 @@
 
       <h6 class="center" *ngIf="this.currentApp.platform!=1">
         <a class="btn download-button waves-effect waves-green white  more-info-button center"
-          [ngStyle]="{color: this.currentApp.accent_color}">Download
+          (click)="executeDownload()" [ngStyle]="{color: this.currentApp.accent_color}">Download
           <i class="material-icons right">file_download</i></a>
+      </h6>
+      <h6 class="center" style="margin-top:15px;">
+        <a href="{{  this.currentApp.repository }}" target="_blank" [ngStyle]="{color:  this.currentApp.accent_color}"
+          style="font-size:35px;">
+          <i class="fa fa-github"></i></a>
+        <a href="{{  this.currentApp.website }}" target="_blank" [ngStyle]="{color:  this.currentApp.accent_color}"
+          style="font-size:35px;margin-left:15px;"> <i class="fa fa-globe"></i></a>
       </h6>
     </div>
   </div>
 
 
-<div class="content">
-  <h6 class="center">
-    <h3 class="white-text"> Commits history</h3>
-    <app-timeline [commits]="this.commits"></app-timeline>
+  <div class="content">
+    <h6 class="center">
+      <h3 class="white-text"> Commits history</h3>
+      <app-timeline [commits]="this.commits"></app-timeline>
 
 
-  </h6>
+    </h6>
 
+  </div>
 </div>
-</div>
-<div class="parallax-container" style="height:270px;">
-  <div class="parallax" style="z-index:2;" materialize="parallax">
 
+
+
+
+<div id="downloadOptionsDialog" materialize="modal"  class="modal download-options">
+  <div class="modal-content ">
+    <h5 class="center white-text">Select your download option</h5>
+
+    <h6 class="center" *ngFor="let opt of this.currentApp.downloadLinks">
+      <a class="btn download-button waves-effect waves-green white  more-info-button center"
+        (click)="executeDownload(opt.link)" [ngStyle]="{color: this.currentApp.accent_color}">{{ opt.title }}
+        <i class="material-icons right">file_download</i></a>
+    </h6>
+  </div>
+  <div class="modal-footer " >
+    <a  class="modal-action modal-close waves-effect waves-green btn-flat white-text">Close</a>
   </div>
 </div>
