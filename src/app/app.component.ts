@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { UiService } from './services/ui.service';
-import { ProjectService } from './services/project.service';
+import { UiService } from './shared/services/ui.service';
+import { ProjectService } from './shared/services/project.service';
 
 @Component({
   selector: 'app-root',

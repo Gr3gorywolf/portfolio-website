@@ -1,5 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
-import { AppInfo } from 'src/app/models/appInfo';
+import { Project } from 'src/app/shared/models/project';
 
 @Component({
   selector: 'app-project-gallery',
@@ -7,7 +7,7 @@ import { AppInfo } from 'src/app/models/appInfo';
   styleUrls: ['./project-gallery.component.css']
 })
 export class ProjectGalleryComponent implements OnInit {
-  @Input() project:AppInfo;
+  @Input() project:Project;
 
   constructor() { }
 

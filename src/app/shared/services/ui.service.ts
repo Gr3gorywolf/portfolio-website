@@ -6,17 +6,19 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationError } from '
 })
 export class UiService {
 
-  public navbarVisible=true;
-  public navbarTitle="";
-  public backgroundColor="#ff914d"
-  constructor(public router:Router) {
+  public navbarVisible = true;
+  public navbarTitle ='';
+  public backgroundColor ='#ff914d'
+  public navbarAccentColor ='#ff914d'
+  constructor(public router: Router) {
     this.router.events.subscribe((event: Event) => {
       if (event instanceof NavigationStart) {
           // Show loading indicator
       }
 
       if (event instanceof NavigationEnd) {
-         this.backgroundColor="#ff914d";
+         this.backgroundColor = '#ff914d';
+         this.navbarAccentColor = '#ff914d';
       }
 
       if (event instanceof NavigationError) {

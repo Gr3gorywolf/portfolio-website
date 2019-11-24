@@ -1,4 +1,4 @@
-export class AppInfo{
+export class Project{
   name:string = "";
   description:string = "";
   logo:string = "";
@@ -11,7 +11,6 @@ export class AppInfo{
   images:Array<string>=[]
   technologies:Array<string>=[]
   downloadLinks:Array<DownloadData>=[];
-
 }
 
 class DownloadData{

@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { GregoryComponent } from './components/customsvg/gregory/gregory.component';
-import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
-import { AppHubComponent } from './components/app-hub/app-hub.component';
-import { ProjectInfoComponent } from './components/app-hub/project-info/project-info.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { ProjectInfoComponent } from './pages/project-info/project-info.component';
 
 
 const routes: Routes = [
-{ path: '', component: ComingSoonComponent},
-{path: 'apps', component: AppHubComponent},
-{path: 'app/:id', component: ProjectInfoComponent}
+{ path: '', component: HomeComponent},
+{path: 'projects', component: ProjectsComponent},
+{path: 'project/:id', component: ProjectInfoComponent}
 
 ];
 

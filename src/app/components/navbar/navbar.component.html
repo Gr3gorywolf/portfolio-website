@@ -1,9 +1,9 @@
 <nav *ngIf="UI.navbarVisible" style="position: fixed;top:0;z-index:120;">
 
   <div class="nav-wrapper white">
-    <a  class="brand-logo center orange-text truncate">{{UI.navbarTitle}}</a>
+    <a  class="brand-logo center truncate" [ngStyle]="{'color': UI.navbarAccentColor}">{{UI.navbarTitle}}</a>
     <a href="#" materialize="sideNav" data-activates="mobile-demo"
-      class="button-collapse show-on-medium-and-up orange-text">
+      class="button-collapse show-on-medium-and-up"  [ngStyle]="{'color': UI.navbarAccentColor}">
       <i class="material-icons">menu</i></a>
   </div>
 
@@ -16,7 +16,7 @@
               class="material-icons orange-text">home</i> Home</a></li>
         <li><a (click)="closeSideMenu()" class="orange-text"><i
               class="material-icons orange-text">info</i> About me</a></li>
-        <li><a [routerLink]="['/apps']" (click)="closeSideMenu()" class="orange-text"><i
+        <li><a [routerLink]="['/projects']" (click)="closeSideMenu()" class="orange-text"><i
               class="material-icons orange-text">code</i> My projects</a>
         </li>
       </ul>

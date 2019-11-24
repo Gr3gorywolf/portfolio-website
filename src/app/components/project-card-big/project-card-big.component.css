@@ -1,9 +1,5 @@
-.floating-card{
-  margin-top:-180px;
+.card{
   border-radius:25px;
-  margin-left:10%;
-  margin-right:10%;
-
 }
 .download-button{
   margin-top:25px;
@@ -13,31 +9,6 @@
   font-size:22px;
   margin-right:5px;
 }
-
-.markdown a{
-  color:white;
-}
-.markdown a{
-  color:white;
-}
-.content{
-  margin-left: 5%;
-  margin-right:5%;
-  width:90%;
-}
-.tabs{
-  margin-left:5%;
-  margin-right:5%;
-  width:90%;
-  border-radius:25px;
-}
-.indicator{
-  z-index:1;
-  height:5px;
-  border-radius:15px;
-}
-
-
 .download-options{
   border-radius:25px;
   background-color: #ff914d;

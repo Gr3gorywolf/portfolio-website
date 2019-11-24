@@ -1,0 +1,45 @@
+<div class="card  white animated slideInUp">
+  <div class="card-content">
+    <h6 class="center">
+      <img class="mobile-logo" src="{{ this.project.logo }}">
+    </h6>
+    <h4 class="header center" [ngStyle]="{'color': this.project.accent_color}">{{ this.project.name }}</h4>
+    <p class="center">{{ this.project.description }}</p>
+    <h6 class="center">
+      <div class="chip white-text" [ngStyle]="{'background-color': this.project.accent_color}"
+        *ngFor="let tech of this.project.technologies ">
+        {{ tech }}
+      </div>
+    </h6>
+    <h6 class="center" *ngIf="this.project.platform!=1">
+      <a class="btn download-button waves-effect waves-green white  more-info-button center"
+        (click)="executeDownload()" [ngStyle]="{color: this.project.accent_color}">Download
+        <i class="material-icons right">file_download</i></a>
+    </h6>
+    <h6 class="center" style="margin-top:15px;">
+      <a href="{{  this.project.repository }}" target="_blank" [ngStyle]="{color:  this.project.accent_color}"
+        style="font-size:35px;">
+        <i class="fa fa-github"></i></a>
+      <a href="{{  this.project.website }}" target="_blank" [ngStyle]="{color:  this.project.accent_color}"
+        style="font-size:35px;margin-left:15px;"> <i class="fa fa-globe"></i></a>
+    </h6>
+  </div>
+</div>
+
+
+
+<!--Multiple download options modal-->
+<div id="downloadOptionsDialog" materialize="modal" class="modal download-options">
+  <div class="modal-content ">
+    <h5 class="center white-text">Select your download option</h5>
+
+    <h6 class="center" *ngFor="let opt of this.project.downloadLinks">
+      <a class="btn download-button waves-effect waves-green white  more-info-button center"
+        (click)="executeDownload(opt.link)" [ngStyle]="{color: this.project.accent_color}">{{ opt.title }}
+        <i class="material-icons right">file_download</i></a>
+    </h6>
+  </div>
+  <div class="modal-footer ">
+    <a class="modal-action modal-close waves-effect waves-green btn-flat white-text">Close</a>
+  </div>
+</div>

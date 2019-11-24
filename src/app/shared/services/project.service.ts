@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import projectsEng from '../../assets/data/projects.eng.json';
-import projectsEsp from '../../assets/data/projects.esp.json';
-import { AppInfo } from '../models/appInfo.js';
+import projectsEng from '../../../assets/data/projects.eng.json';
+import projectsEsp from '../../../assets/data/projects.esp.json';
+import { Project } from '../models/project';
 @Injectable({
   providedIn: 'root'
 })
 export class ProjectService {
-  projects: Array<AppInfo> = [];
+  projects: Array<Project> = [];
   constructor() {
 
 
@@ -14,7 +14,7 @@ export class ProjectService {
   init() {
     this.projects = projectsEng;
   }
-  getProjectByRepo(repoName: string):AppInfo {
+  getProjectByRepo(repoName: string):Project {
     for (let proj of this.projects) {
            if(proj.repository.endsWith(repoName)){
              return proj;

@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { UiService } from 'src/app/services/ui.service';
-import { AppInfo } from 'src/app/models/appInfo.js';
-import { ProjectService } from 'src/app/services/project.service';
+import { UiService } from 'src/app/shared/services/ui.service';
+import { Project } from 'src/app/shared/models/project';
+import { ProjectService } from 'src/app/shared/services/project.service';
 
 declare var $: any;
 @Component({
-  selector: 'app-app-hub',
-  templateUrl: './app-hub.component.html',
-  styleUrls: ['./app-hub.component.css']
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.css']
 })
-export class AppHubComponent implements OnInit {
+export class ProjectsComponent implements OnInit {
 
 
 
