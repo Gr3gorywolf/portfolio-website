@@ -45,9 +45,7 @@ export class AppHubComponent implements OnInit {
 
   }
   tabClicked() {
-    $([document.documentElement, document.body]).animate({
-      scrollTop: $('#tabBar').offset().top - 90
-    }, 120);
+
   }
 
 }

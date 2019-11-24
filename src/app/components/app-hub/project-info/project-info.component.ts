@@ -47,7 +47,11 @@ export class ProjectInfoComponent implements OnInit {
 
 
 
-
+  tabSelected(){
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $('#tabBar').offset().top - 70
+    }, 120);
+  }
 
   executeDownload(selectedLink: string = null) {
     if (this.currentApp.downloadLinks.length == 1) {
