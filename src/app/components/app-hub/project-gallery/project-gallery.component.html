@@ -1,0 +1,11 @@
+
+<div class="row" *ngIf="project.platform==0">
+    <div class="col s12 m6 l4" *ngFor="let img of project.images" >
+        <img src="{{ img }}" class="materialboxed" materialize="materialbox" width="100%" style="padding:5px;border-radius:20px;"  >
+    </div>
+</div>
+<div class="row" *ngIf="project.platform!=0">
+    <div class="col s12 m6 " *ngFor="let img of project.images" >
+        <img src="{{ img }}" class="materialboxed" materialize="materialbox" width="100%" style="padding:5px;border-radius:20px;"  >
+    </div>
+</div>

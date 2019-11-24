@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { GregoryfaceComponent } from './components/customsvg/gregoryface/gregoryface.component';
 import { NgxMdModule } from 'ngx-md';
 import { TimelineComponent } from './components/timeline/timeline.component';
+import { ProjectGalleryComponent } from './components/app-hub/project-gallery/project-gallery.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { TimelineComponent } from './components/timeline/timeline.component';
     NavbarComponent,
     ProjectInfoComponent,
     GregoryfaceComponent,
-    TimelineComponent
+    TimelineComponent,
+    ProjectGalleryComponent
   ],
   imports: [
     BrowserModule,

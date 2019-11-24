@@ -1,6 +1,6 @@
 [{
     "name": "Multitube",
-    "description": "Aplicación de módulos múltiples que te permite reproducir y descargar videos de youtube y mucho más!.",
+    "description": "Multi modules application that allows you to stream and download videos from youtube and even more!.",
     "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/mipmap-xxxhdpi/ic_launcher.png",
     "portrait": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/drawable/logo.png",
     "platform": 0,
@@ -12,6 +12,7 @@
       "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/1.jpeg",
       "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/2.jpeg",
       "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/3.jpeg",
+      "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/4.jpeg",
       "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/5.jpeg",
       "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/6.jpeg",
       "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/7.jpeg"
@@ -19,14 +20,16 @@
     "technologies": [
       "C#", "Xamarin.android", "TCP Sockets", "Firebase"
     ],
-    "downloadLinks": [{
-      "title": "Android",
-      "link": "https://gr3gorywolf.github.io/getromdownload/youtubepc.html"
-    }]
+    "downloadLinks":[
+      {
+        "title":"Android",
+        "link":"https://gr3gorywolf.github.io/getromdownload/youtubepc.html"
+      }
+    ]
   },
   {
     "name": "Neon Rom3r",
-    "description": "Aplicación que te permite buscar y descargar roms de múltiples consolas e incluso abrirla directamente desde la aplicación",
+    "description": "Aplication that allows you to search and download roms of multiple consoles and even open it directly from the app",
     "logo": "https://raw.githubusercontent.com/Gr3gorywolf/NeonRom3r/master/Resources/mipmap-xxxhdpi/ic_launcher.png",
     "portrait": "https://camo.githubusercontent.com/efb022f5afcb8f099725b0b767a40f277f356a62/68747470733a2f2f677233676f7279776f6c662e6769746875622e696f2f4e656f6e526f6d33722f6c6f676f6c617267652e706e67",
     "platform": 0,
@@ -49,14 +52,16 @@
     "technologies": [
       "C#", "Xamarin.android", "Firebase"
     ],
-    "downloadLinks": [{
-      "title": "Android",
-      "link": "https://github.com/Gr3gorywolf/NeonRom3r/raw/master/docs/GR3apps.neonrom3r.apk"
-    }]
+    "downloadLinks":[
+      {
+        "title":"Android",
+        "link":"https://github.com/Gr3gorywolf/NeonRom3r/raw/master/docs/GR3apps.neonrom3r.apk"
+      }
+    ]
   },
   {
     "name": "Glutter Chat",
-    "description": "Aplicación de chat multiservidor que tiene asistencia de bot, creación / personalización de servidores y mucho más.",
+    "description": "Multi server chat application that has bot assistence,server creation/customization and much more!.",
     "logo": "assets/img/GlutterChatLauncher.png",
     "portrait": "",
     "platform": 0,
@@ -69,11 +74,17 @@
     ],
     "technologies": [
       "Dart", "Flutter", "Firebase"
+    ],
+    "downloadLinks":[
+      {
+        "title":"Android",
+        "link":"https://gr3gorywolf.github.io/getromdownload/glutterchat"
+      }
     ]
   },
   {
     "name": "NeonRom3r web",
-    "description": "Aplicación web que le permite buscar y descargar roms de varias consolas sin anuncios ni descargar temporizadores",
+    "description": "Web aplication that allows you to search and download roms of multiple consoles without ads or download timers",
     "logo": "https://raw.githubusercontent.com/Gr3gorywolf/NeonRom3r/master/Resources/mipmap-xxxhdpi/ic_launcher_foreground.png",
     "portrait": "https://neonromer.gregoryc.dev/assets/imgs/Neonrom3rweb.png",
     "platform": 1,
@@ -87,14 +98,11 @@
     "technologies": [
       "HTML", "CSS", "JS", "Angular", "Materialize"
     ],
-    "downloadLinks": [{
-      "title": "Android",
-      "link": "https://gr3gorywolf.github.io/getromdownload/glutterchat"
-    }]
+    "downloadLinks":[]
   },
   {
     "name": "Multitube webhelper",
-    "description": "Una forma más fácil de conectarse a el de reproduccion de multitube sin ingresar los servidores ip y puertos ¡lo único que debe hacer es escanear un código QR!",
+    "description": "An easier way to connect to streamings servers without enter servers ip and ports the only thing that you need to do is scan a QR code!",
     "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/mipmap-xxxhdpi/ic_launcher_foreground.png",
     "portrait": "https://multitubewebhelper.gregoryc.dev/img/logo.png",
     "platform": 1,
@@ -108,11 +116,11 @@
     "technologies": [
       "HTML", "CSS", "JS", "Materialize", "Firebase"
     ],
-    "downloadLinks": []
+    "downloadLinks":[]
   },
   {
     "name": "GlutterChat web",
-    "description": "Aplicación de chat multiservidor basada en web que tiene asistencia de bot y creación / personalización de servidores",
+    "description": "Web based Multi server chat application that has bot assistence and server creation/customization",
     "logo": "assets/img/GlutterChatLauncher.png",
     "portrait": "assets/img/GlutterChatLogo.png",
     "platform": 1,
@@ -126,12 +134,12 @@
     "technologies": [
       "HTML", "CSS", "JS", "Angular", "Materialize", "Socket.IO", "NodeJs", "Express", "Firebase"
     ],
-    "downloadLinks": []
+    "downloadLinks":[]
 
   },
   {
     "name": "Multitube desktop",
-    "description": "Cliente de escritorio de Youtube que le permite descargar / reproducir contenido multimedia desde YouTube y también puede controlarse con la aplicación móvil de multitube",
+    "description": "Youtube desktop client that allows you to download/stream media from youtube and also can be controlled with the muultitube mobile app",
     "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/mipmap-xxxhdpi/ic_launcher_foreground.png",
     "portrait": "assets/img/multitubedesktop.png",
     "platform": 2,
@@ -145,17 +153,18 @@
     "technologies": [
       "HTML", "CSS", "JS", "Electron", "Materialize", "TCP Sockets"
     ],
-    "downloadLinks": [{
-        "title": "Mac os X (x64)",
-        "link": "https://mega.nz/#!xFoVwJhD!UOlNWHd9RrKg_dCivNhB8801aWvI-P-RSvf5hqO3lYM"
+    "downloadLinks":[
+      {
+        "title":"Mac os X (x64)",
+        "link":"https://mega.nz/#!xFoVwJhD!UOlNWHd9RrKg_dCivNhB8801aWvI-P-RSvf5hqO3lYM"
       },
       {
-        "title": "Windows (x86,x64)",
-        "link": "https://mega.nz/#!MEpx3B5Z!eu1VYu3UIYmaq6Budg-8TbJqSzhuSac9Uh26Q54X8oo"
+        "title":"Windows (x86,x64)",
+        "link":"https://mega.nz/#!MEpx3B5Z!eu1VYu3UIYmaq6Budg-8TbJqSzhuSac9Uh26Q54X8oo"
       },
       {
-        "title": "Linux (x86,x64)",
-        "link": "https://mega.nz/#!ENwT2DCb!OsyTGp_kPfMDGerKACg5knaTdTP2G4jTfAh0hNXq9Sk"
+        "title":"Linux (x86,x64)",
+        "link":"https://mega.nz/#!ENwT2DCb!OsyTGp_kPfMDGerKACg5knaTdTP2G4jTfAh0hNXq9Sk"
       }
     ]
   }

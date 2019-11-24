@@ -12,7 +12,6 @@
       "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/1.jpeg",
       "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/2.jpeg",
       "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/3.jpeg",
-      "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/4.jpeg",
       "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/5.jpeg",
       "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/6.jpeg",
       "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/docs/img/screenshots/7.jpeg"
@@ -93,7 +92,13 @@
     "primary_color": "#434e56",
     "accent_color": "#08a374",
     "images": [
-
+      "https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps.png",
+      "https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps2.png",
+      "https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps3.png",
+      "https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps4.png",
+      "https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps5.png",
+      "https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps6.png",
+      "https://raw.githubusercontent.com/Gr3gorywolf/neonrom3r-webpage/master/imgs/wps7.png"
     ],
     "technologies": [
       "HTML", "CSS", "JS", "Angular", "Materialize"

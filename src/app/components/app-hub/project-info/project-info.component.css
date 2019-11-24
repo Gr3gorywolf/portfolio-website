@@ -25,6 +25,17 @@
   margin-right:5%;
   width:90%;
 }
+.tabs{
+  margin-left:5%;
+  margin-right:5%;
+  width:90%;
+  border-radius:25px;
+}
+.indicator{
+  z-index:1;
+  height:5px;
+  border-radius:15px;
+}
 
 
 .download-options{
