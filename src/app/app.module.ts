@@ -18,6 +18,7 @@ import { ProjectGalleryComponent } from './components/project-gallery/project-ga
 import { ProjectCardBigComponent } from './components/project-card-big/project-card-big.component';
 import { PreloaderComponent } from './components/preloader/preloader.component';
 import { LastCommitChipComponent } from './components/last-commit-chip/last-commit-chip.component';
+import { AboutComponent } from './pages/about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { LastCommitChipComponent } from './components/last-commit-chip/last-comm
     ProjectGalleryComponent,
     ProjectCardBigComponent,
     PreloaderComponent,
-    LastCommitChipComponent
+    LastCommitChipComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

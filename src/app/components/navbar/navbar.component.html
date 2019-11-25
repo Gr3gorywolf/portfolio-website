@@ -14,7 +14,7 @@
               <li><img src="assets/img/face.png" class="face" alt=""></li>
         <li><a [routerLink]="['/']" (click)="closeSideMenu()" routerLinkActive="router-link-active" class="orange-text"><i
               class="material-icons orange-text">home</i> Home</a></li>
-        <li><a (click)="closeSideMenu()" class="orange-text"><i
+        <li><a [routerLink]="['/about']" (click)="closeSideMenu()" class="orange-text"><i
               class="material-icons orange-text">info</i> About me</a></li>
         <li><a [routerLink]="['/projects']" (click)="closeSideMenu()" class="orange-text"><i
               class="material-icons orange-text">code</i> My projects</a>

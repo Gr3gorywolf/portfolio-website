@@ -1,6 +1,6 @@
 <app-preloader *ngIf="lastCommit==null" [size]="'small'"></app-preloader>
 <a href="{{ lastCommit.html_url }}" target="_blank" *ngIf="lastCommit!=null">
-<div class="chip white card hoverable" >
+<div class="chip white card hoverable animated flipInX slower delay-1s" >
   <img src="{{ lastCommit.author.avatar_url}}" alt="Contact Person">
   <h6 class="truncate" style="max-width:250px;"> {{ lastCommit.commit.message  }}</h6>
 </div>

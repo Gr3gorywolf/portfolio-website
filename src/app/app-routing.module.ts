@@ -4,10 +4,12 @@ import { GregoryComponent } from './components/customsvg/gregory/gregory.compone
 import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ProjectInfoComponent } from './pages/project-info/project-info.component';
+import { AboutComponent } from './pages/about/about.component';
 
 
 const routes: Routes = [
 { path: '', component: HomeComponent},
+{path: 'about', component: AboutComponent},
 {path: 'projects', component: ProjectsComponent},
 {path: 'project/:id', component: ProjectInfoComponent}
 
