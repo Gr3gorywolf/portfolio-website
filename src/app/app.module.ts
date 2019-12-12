@@ -19,6 +19,8 @@ import { ProjectCardBigComponent } from './components/project-card-big/project-c
 import { PreloaderComponent } from './components/preloader/preloader.component';
 import { LastCommitChipComponent } from './components/last-commit-chip/last-commit-chip.component';
 import { AboutComponent } from './pages/about/about.component';
+import { PersonalInfoCardComponent } from './components/personal-info-card/personal-info-card.component';
+import { PersonalSkillsCardComponent } from './components/personal-skills-card/personal-skills-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +37,9 @@ import { AboutComponent } from './pages/about/about.component';
     ProjectCardBigComponent,
     PreloaderComponent,
     LastCommitChipComponent,
-    AboutComponent
+    AboutComponent,
+    PersonalInfoCardComponent,
+    PersonalSkillsCardComponent
   ],
   imports: [
     BrowserModule,

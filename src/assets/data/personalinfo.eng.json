@@ -1,0 +1,122 @@
+{
+"picture":"",
+"name":"Gregory Alexander Cabral De Los Santos",
+"age":"20",
+"country":"La Romana,Dominican Republic",
+"address":"Barrio De Los Maestro calle B edificio B1",
+"email":"gregoryalexandercabral@gmail.com",
+"phone":"+1 829-325-1377",
+"social":{
+    "facebook":"https://www.facebook.com/gregory.cabral.716",
+    "instagram":"https://www.instagram.com/gr3gorywolf/",
+    "github":"https://github.com/Gr3gorywolf",
+    "linkedin": "https://www.linkedin.com/in/gregory-alexander-cabral-de-los-santos-79835614b/",
+    "twitch": "https://www.twitch.tv/gregorywolf123"
+}, 
+"resume_download_link":"",
+"skills":[
+
+    
+{
+    "category": "languaje",
+    "name":"Mysql,Sqlite",
+    "percent":"50",
+    "status":"1"
+},
+{
+    "category": "languaje",
+    "name":"HTML,CSS,JS",
+    "percent":"85",
+    "status":"2"
+},
+{
+    "category": "languaje",
+    "name":"C#",
+    "percent":"78",
+    "status":"2"
+},
+{
+    "category": "languaje",
+    "name":"JavaScript",
+    "percent":"65",
+    "status":"1"
+},
+{
+    "category": "languaje",
+    "name":"Dart",
+    "percent":"50",
+    "status":"0"
+},
+{
+    "category": "languaje",
+    "name":"Php",
+    "percent":"50",
+    "status":"0"
+},
+{
+    "category": "framework",
+    "name":"Nodejs + Express",
+    "percent":"60",
+    "status":"1"
+},
+{
+    "category": "framework",
+    "name":"Firebase",
+    "percent":"70",
+    "status":"1"
+},
+{
+    "category": "framework",
+    "name":"C# Windows forms",
+    "percent":"60",
+    "status":"1"
+},
+{
+    "category": "framework",
+    "name":"Angular 7",
+    "percent":"65",
+    "status":"1"
+},
+{
+    "category": "framework",
+    "name":"MaterializeCSS",
+    "percent":"90",
+    "status":"2"
+},
+{
+    "category": "framework",
+    "name":"Bootstrap",
+    "percent":"70",
+    "status":"1"
+},
+{
+    "category": "framework",
+    "name":"Laravel",
+    "percent":"45",
+    "status":"0"
+},
+{
+    "category": "framework",
+    "name":"Xamarin.Android",
+    "percent":"80",
+    "status":"1"
+},
+{
+    "category": "framework",
+    "name":"Xamarin.Forms",
+    "percent":"80",
+    "status":"2"
+},
+{
+    "category": "framework",
+    "name":"Flutter SDK",
+    "percent":"50",
+    "status":"0"
+}
+],
+"studies":[],
+"professional_experience":[
+
+]
+
+}

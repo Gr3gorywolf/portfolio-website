@@ -1,11 +1,14 @@
-<div class="parallax-container" style="height:100vh;margin-top:-30px;">
-  <div class="parallax " materialize="parallax">
+<div class="parallax-container" style="height:100vh;margin-top:-30px;" >
+  <div class="parallax " materialize="parallax" >
     <div class="animated fadeInDown slow" style="height:60%;margin-left:-8%;margin-top:2%">
       <app-gregoryapps></app-gregoryapps>
     </div>
     <h5 class="center white-text">Scroll to see the projects</h5>
-    <h6 class="center "> <i class="material-icons white-text floatinganimation "
-        style="font-size:80px;">arrow_downward</i></h6>
+    <h6 class="center " >
+      <div > <i  class="material-icons white-text"
+        style="font-size:80px;" >arrow_downward</i>
+      </div>
+      </h6>
 
   </div>
 </div>
@@ -13,11 +16,11 @@
 
 
 
-<div class="section" style="background-color:#5271ff;border-radius:25px;">
+<div class="section" style="background-color:#5271ff;border-radius:25px;" >
   <div class="row" style="width:100%;z-index:50;">
     <div *ngFor="let cat of categories;let i = index">
       <!--Category header-->
-      <div class="col s12" style="margin-top:50px;">
+      <div class="col s12" style="margin-top:50px;" id="cat{{i}}">
         <h6 class="center"><i class="material-icons center white-text" style="font-size:85px;">{{ cat.icon }}</i></h6>
         <h4 class="white-text center">{{ cat.title }}</h4>
       </div>

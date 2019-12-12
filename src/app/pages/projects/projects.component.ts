@@ -44,8 +44,11 @@ export class ProjectsComponent implements OnInit {
 
 
   }
-  tabClicked() {
 
+  scrollToCategory(categoryId) {
+    console.log("xd");
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $('#cat' + categoryId).offset().top - 70
+    }, 120);
   }
-
 }
