@@ -12,17 +12,12 @@
     "github":"https://github.com/Gr3gorywolf",
     "linkedin": "https://www.linkedin.com/in/gregory-alexander-cabral-de-los-santos-79835614b/",
     "twitch": "https://www.twitch.tv/gregorywolf123"
-}, 
+},
 "resume_download_link":"",
 "skills":[
 
-    
-{
-    "category": "languaje",
-    "name":"Mysql,Sqlite",
-    "percent":"50",
-    "status":"1"
-},
+
+
 {
     "category": "languaje",
     "name":"HTML,CSS,JS",
@@ -52,6 +47,12 @@
     "name":"Php",
     "percent":"50",
     "status":"0"
+},
+{
+  "category": "framework",
+  "name":"Mysql,Sqlite",
+  "percent":"50",
+  "status":"1"
 },
 {
     "category": "framework",
