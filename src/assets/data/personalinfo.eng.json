@@ -15,9 +15,6 @@
 },
 "resume_download_link":"",
 "skills":[
-
-
-
 {
     "category": "languaje",
     "name":"HTML,CSS,JS",
@@ -115,7 +112,34 @@
     "status":"0"
 }
 ],
-"studies":[],
+"studies":[
+   {
+     "title":"Basic/advanced english",
+     "location":"Dominico americano",
+     "daterange":"January 2017 - September 2018",
+     "degree":"Other"
+   },
+   {
+    "title":"Software engineering",
+    "location":"Universidad dominicana O&M",
+    "daterange":"January 2017 - Present",
+    "degree":"Engineer’s Degree"
+  },
+  {
+    "title":"Office packpage and basic operating systems usage",
+    "location":"Alianza Juvenil",
+    "daterange":"February 2014 - November 2014",
+    "degree":"Other"
+  },
+  {
+    "title":"Highschool ",
+    "location":"Calasanz San Eduardo",
+    "daterange":"January 2010 - August 2016",
+    "degree":"Bachelor’s Degree"
+  }
+
+
+],
 "professional_experience":[
 
 ]

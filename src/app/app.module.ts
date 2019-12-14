@@ -21,6 +21,7 @@ import { LastCommitChipComponent } from './components/last-commit-chip/last-comm
 import { AboutComponent } from './pages/about/about.component';
 import { PersonalInfoCardComponent } from './components/personal-info-card/personal-info-card.component';
 import { PersonalSkillsCardComponent } from './components/personal-skills-card/personal-skills-card.component';
+import { FloatingNavigatorComponent } from './components/floating-navigator/floating-navigator.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,8 @@ import { PersonalSkillsCardComponent } from './components/personal-skills-card/p
     LastCommitChipComponent,
     AboutComponent,
     PersonalInfoCardComponent,
-    PersonalSkillsCardComponent
+    PersonalSkillsCardComponent,
+    FloatingNavigatorComponent
   ],
   imports: [
     BrowserModule,

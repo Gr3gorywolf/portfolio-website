@@ -1,40 +1,41 @@
-<div class="parallax-container" style="height:100vh;margin-top:-30px;" >
-  <div class="parallax " materialize="parallax" >
 
-    <div class="animated fadeInDown slow" style="height:60%;margin-left:-8%;margin-top:2%">
+  <div style="height:98vh;margin-top:2vh; " id="{{ categories[0].Id }}" >
+
+    <div class="animated fadeInDown slow" style="height:60%;margin-left:-8%;">
       <app-gregoryapps></app-gregoryapps>
     </div>
-    <h5 class="center white-text">Scroll to see the projects</h5>
+    <h5 class="center white-text">Scroll to see my projects</h5>
     <h6 class="center " >
-      <div > <i  class="material-icons white-text"
+      <div (click)="scrollToCategory('sec0')" style="cursor: pointer;" > <i  class="material-icons white-text"
         style="font-size:80px;" >arrow_downward</i>
       </div>
       </h6>
-
   </div>
-</div>
 
 
 
 
 <div class="section" style="background-color:#5271ff;border-radius:25px;" >
   <div class="row" style="width:100%;z-index:50;">
-    <div *ngFor="let cat of categories;let i = index">
+    <div *ngFor="let cat of categories;let i = index;">
+      <div *ngIf="i > 0">
       <!--Category header-->
-      <div class="col s12" style="margin-top:50px;" id="cat{{i}}">
-        <h6 class="center"><i class="material-icons center white-text" style="font-size:85px;">{{ cat.icon }}</i></h6>
-        <h4 class="white-text center">{{ cat.title }}</h4>
+      <div class="col s12" style="margin-top:50px;" id="{{cat.Id}}">
+        <h6 class="center"><i class="material-icons center white-text" style="font-size:85px;">{{ cat.Icon }}</i></h6>
+        <h4 class="white-text center">{{ cat.Title }}</h4>
       </div>
          <!--Category content-->
       <div id="tab1" class="col s12" style="min-height:500px;">
         <div class="row animated fadeInUpBig ">
           <div *ngFor="let project of this.projectService.projects">
-            <div class="col s12 m6" *ngIf="project.platform==i">
+            <div class="col s12 m6" *ngIf="project.platform==(i-1)">
               <app-project-card [project]="project"></app-project-card>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </div>
   </div>
 </div>
+<app-floating-navigator [sections]="categories"></app-floating-navigator>

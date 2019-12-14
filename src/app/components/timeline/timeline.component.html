@@ -1,3 +1,5 @@
+
+<!--Commits-->
 <div class="timeline" *ngIf="this.commits!=null">
     <div class="timeline-event" *ngFor="let comm of this.commits">
         <div class="card timeline-content " style="border-radius:45px;">
@@ -13,3 +15,22 @@
         <div class="timeline-badge orange white-text"><i class="material-icons">adjust</i></div>
       </div>
   </div>
+
+<!--Personal education-->
+<div class="timeline" *ngIf="this.studies!=null">
+  <div class="timeline-event" *ngFor="let stu of this.studies">
+      <div class="card timeline-content " style="border-radius:45px;">
+
+        <div class="card-content">
+
+          <span class="card-title  grey-text text-darken-4 " style="font-size:20px;">{{ stu.title }}</span>
+          <p class="truncate">
+           At {{ stu.location }}   <br>
+            {{ stu.daterange  }} <br>
+            {{ stu.degree  }}
+           </p>
+        </div>
+      </div>
+      <div class="timeline-badge orange white-text"><i class="material-icons">adjust</i></div>
+    </div>
+</div>

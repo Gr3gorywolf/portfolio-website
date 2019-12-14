@@ -1,0 +1,10 @@
+<div class="fixed-action-btn toolbar" style="border-top-right-radius:50px;border-top-left-radius:50px">
+
+  <a class="btn-floating btn-large" [style.background-color]="UI.navbarAccentColor">
+    <i class="large material-icons">unfold_more</i>
+  </a>
+
+  <ul >
+    <li class="waves-effect waves-light"  *ngFor="let sec of sections"><a  materialize="tooltip" data-position="top" [materializeParams]="[{tooltip:sec.Title}]" (click)="scrollToSection(sec.Id)"><i class="material-icons">{{ sec.Icon }}</i></a></li>
+  </ul>
+</div>

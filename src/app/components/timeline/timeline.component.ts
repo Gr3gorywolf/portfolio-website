@@ -7,6 +7,7 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class TimelineComponent implements OnInit {
   @Input() commits:Array<any>=null;
+  @Input() studies:Array<any>=null;
   constructor() { }
 
   ngOnInit() {

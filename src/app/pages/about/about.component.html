@@ -1,19 +1,21 @@
-<div class="parallax-container" style="margin-top:-35px;height:350px;" >
+<div class="parallax-container" style="margin-top:-35px;height:350px;">
   <div class="parallax" materialize="parallax">
-    <img src="assets/img/background.jpg" alt="" >
+    <img src="assets/img/background.jpg" alt="">
   </div>
 </div>
 <div class="section " style="border-radius:20px;background-color:#5271ff">
 
-  <div class="resume-content" >
-    <app-personal-info-card [info]="info"></app-personal-info-card>
-
+  <div class="resume-content">
+    <div id="{{ sections[0].Id }}">
+      <app-personal-info-card [info]="info"></app-personal-info-card>
+    </div>
 
     <!-- contenttt-->
 
     <h6 class="center">
-      <i class=" material-icons white-text" style="font-size:55px;margin-top:20px;">info</i>
-      <h4 class="white-text">About me</h4>
+      <i class=" material-icons white-text" style="font-size:55px;margin-top:20px;"
+        id="{{ sections[1].Id }}">{{ sections[1].Icon }}</i>
+      <h4 class="white-text">{{ sections[1].Title }}</h4>
     </h6>
 
 
@@ -29,17 +31,23 @@
     </h5>
 
     <h6 class="center">
-      <i class=" material-icons white-text" style="font-size:55px;margin-top:20px;">code</i>
-      <h4 class="white-text">Programming and markup languajes</h4>
+      <i class=" material-icons white-text" style="font-size:55px;margin-top:20px;"
+        id="{{ sections[2].Id }}">{{ sections[2].Icon }}</i>
+      <h4 class="white-text">{{ sections[2].Title }}</h4>
     </h6>
-   <app-personal-skills-card [info]="info" [category]="'languaje'"></app-personal-skills-card>
-   <h6 class="center">
-      <i class=" material-icons white-text" style="font-size:55px;margin-top:20px;">build</i>
-      <h4 class="white-text">Technologies and frameworks</h4>
+    <app-personal-skills-card [info]="info" [category]="'languaje'"></app-personal-skills-card>
+    <h6 class="center">
+      <i class=" material-icons white-text" style="font-size:55px;margin-top:20px;"
+        id="{{ sections[3].Id }}">{{ sections[3].Icon }}</i>
+      <h4 class="white-text">{{ sections[3].Title}}</h4>
     </h6>
-   <app-personal-skills-card [info]="info" [category]="'framework'"></app-personal-skills-card>
-
-
-
+    <app-personal-skills-card [info]="info" [category]="'framework'"></app-personal-skills-card>
+    <h6 class="center">
+      <i class=" material-icons white-text" style="font-size:55px;margin-top:20px;"
+        id="{{ sections[4].Id }}">{{ sections[4].Icon }}</i>
+      <h4 class="white-text">{{ sections[4].Title}}</h4>
+    </h6>
+    <app-timeline [studies]="info.studies"></app-timeline>
   </div>
 </div>
+<app-floating-navigator [sections]="sections"></app-floating-navigator>

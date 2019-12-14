@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UiService } from 'src/app/shared/services/ui.service';
 import { Project } from 'src/app/shared/models/project';
 import { ProjectService } from 'src/app/shared/services/project.service';
+import { Section } from 'src/app/shared/models/section';
 
 declare var $: any;
 @Component({
@@ -18,18 +19,26 @@ export class ProjectsComponent implements OnInit {
   constructor(public UI: UiService, public projectService: ProjectService) { }
 
 
-  categories: Array<any> = [
+  categories: Array<Section> = [
     {
-      title: 'Mobile',
-      icon: 'phone_android'
+      Title: 'Presentation',
+      Icon: 'home',
+      Id:'sec-1'
     },
     {
-      title: 'Web',
-      icon: 'code'
+      Title: 'Mobile',
+      Icon: 'phone_android',
+      Id:'sec0'
     },
     {
-      title: 'Desktop',
-      icon: 'laptop'
+      Title: 'Web',
+      Icon: 'code',
+      Id:'sec1'
+    },
+    {
+      Title: 'Desktop',
+      Icon: 'laptop',
+      Id:'sec2'
     }
   ]
 
@@ -38,6 +47,7 @@ export class ProjectsComponent implements OnInit {
     setTimeout(() => {
       this.UI.navbarTitle = 'My projects';
       this.UI.navbarVisible = true;
+      this.UI.backgroundColor = "#5271ff"
     }, 50);
 
 
@@ -48,7 +58,7 @@ export class ProjectsComponent implements OnInit {
   scrollToCategory(categoryId) {
     console.log("xd");
     $([document.documentElement, document.body]).animate({
-      scrollTop: $('#cat' + categoryId).offset().top - 70
+      scrollTop: $('#' + categoryId).offset().top - 70
     }, 120);
   }
 }
