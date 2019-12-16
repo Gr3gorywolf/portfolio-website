@@ -9,16 +9,24 @@ declare var $:any;
 })
 export class FloatingNavigatorComponent implements OnInit {
 
-
   @Input() sections:Array<Section>;
   constructor(public UI:UiService) { }
 
   ngOnInit() {
+      if(localStorage.getItem("tutorialSeen") == null){
+      $('.tap-target').tapTarget('open');
+      localStorage.setItem("tutorialSeen","true");
+    }
+
+
   }
   scrollToSection(sectionId) {
     console.log("xd");
+
+
+
     $([document.documentElement, document.body]).animate({
       scrollTop: $('#' + sectionId).offset().top - 70
-    }, 120);
+    }, 500);
   }
 }

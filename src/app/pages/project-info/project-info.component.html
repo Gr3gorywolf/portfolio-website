@@ -14,32 +14,18 @@
     <h6 class="center">
       <div class="row">
         <div class="col s12">
-          <ul class="tabs card animated fadeInLeft delay-1s" id="tabBar" (click)="tabSelected()" materialize="tabs">
-            <li class="tab col s6">
-              <a href="#test1" [ngStyle]="{color:  this.currentProject.accent_color}">
-                <i class="center material-icons" style="font-size:35px;">image</i>
-              </a>
-            </li>
-            <li class="tab col s6">
-              <a href="#test2" [ngStyle]="{color:  this.currentProject.accent_color}">
-                <i class="center material-icons" style="font-size:35px;">history</i>
-              </a>
-            </li>
-            <div class="indicator " [ngStyle]="{'background-color': this.currentProject.accent_color}"></div>
-          </ul>
-        </div>
-        <div id="test1" class="col s12 animated slideInUp faster">
-          <i class="center material-icons white-text" style="font-size:55px;margin-top:20px;">image</i>
-          <h4 class="white-text">Project gallery</h4>
+
+        <div id="{{ sections[0].Id }}" class="col s12 animated slideInUp faster">
+          <i class="center material-icons white-text" style="font-size:55px;margin-top:20px;">{{ sections[0].Icon }}</i>
+          <h4 class="white-text">{{ sections[0].Title }}</h4>
           <app-project-gallery [project]="this.currentProject"></app-project-gallery>
         </div>
-        <div id="test2" class="col s12 animated slideInUp faster">
-          <i class="center material-icons white-text" style="font-size:55px;margin-top:20px;">history </i>
-          <h4 class="white-text"> Commits history</h4>
+        <div id="{{ sections[1].Id }}" class="col s12 animated slideInUp faster">
+          <i class="center material-icons white-text" style="font-size:55px;margin-top:20px;">{{ sections[1].Icon }} </i>
+          <h4 class="white-text">{{ sections[1].Title }}</h4>
           <app-timeline *ngIf="!this.isLoadingCommits" [commits]="this.projectCommits"></app-timeline>
           <app-preloader *ngIf="this.isLoadingCommits" [size]="'big'"></app-preloader>
         </div>
       </div>
-    </h6>
   </div>
-</div>
+  <app-floating-navigator [sections]="sections"></app-floating-navigator>

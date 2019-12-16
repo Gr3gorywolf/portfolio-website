@@ -1,0 +1,19 @@
+@keyframes color_change {
+  0% { fill: #d81b60; }
+  10% { fill: #7b1fa2; }
+  20% { fill: #512da8; }
+  30% { fill: #303f9f;}
+  40% { fill: #1976d2; }
+  50% { fill: #0288d1; }
+  60% { fill: #0097a7; }
+  70% { fill: #00796b;  }
+  80% {  fill: #388e3c; }
+  90% {  fill: #689f38; }
+}
+
+.color_change {
+	animation-name: color_change;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-direction:normal;
+}

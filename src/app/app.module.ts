@@ -22,6 +22,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { PersonalInfoCardComponent } from './components/personal-info-card/personal-info-card.component';
 import { PersonalSkillsCardComponent } from './components/personal-skills-card/personal-skills-card.component';
 import { FloatingNavigatorComponent } from './components/floating-navigator/floating-navigator.component';
+import { GregoryscrollComponent } from './components/customsvg/gregoryscroll/gregoryscroll.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { FloatingNavigatorComponent } from './components/floating-navigator/floa
     AboutComponent,
     PersonalInfoCardComponent,
     PersonalSkillsCardComponent,
-    FloatingNavigatorComponent
+    FloatingNavigatorComponent,
+    GregoryscrollComponent
   ],
   imports: [
     BrowserModule,

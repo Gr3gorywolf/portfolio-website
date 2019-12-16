@@ -8,8 +8,13 @@ import { Component, OnInit,Input } from '@angular/core';
 export class PersonalSkillsCardComponent implements OnInit {
 
 
+  categories:Array<string>=[
+
+    "languaje",
+    "framework",
+  ]
   @Input() info:any;
-  @Input() category:string;
+
   constructor() { }
 
   ngOnInit() {

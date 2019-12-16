@@ -1,26 +1,46 @@
-<div class="card white" style="border-radius:25px;">
+<div class="card white" style="border-radius:25px;padding:5px">
+
+
+
+
+
   <div class="card-content row">
-      <div *ngFor="let skill of info.skills">
-    <div class="col s12 m6 xl4" *ngIf="skill.category == category" >
-      <h6 style="margin-left:3px;">{{skill.name}}</h6>
-      <div class="progress">
-        <div class="determinate orange" [ngStyle]="{'width': skill.percent + '%'}">
-        </div>
+     <div *ngFor="let cat of categories">
+
+
+      <div class="col s12" style="margin-top:20px;margin-bottom:20px">
+        <h5 class="center hide"> <i class="material-icons black-text" style="font-size:80px;">code</i></h5>
+      <h5 class="center black-text" *ngIf="cat == 'languaje'"> Programming and markup languajes </h5>
+      <h5 class="center black-text" *ngIf="cat == 'framework'"> Technologies and frameworks </h5>
+      <div class="horizontal-line grey"></div>
       </div>
-      <h6 class="grey-text" *ngIf="skill.status == 0">
 
-        Currently learning
-      </h6>
-      <h6 class="grey-text" *ngIf="skill.status == 1">
-
-        Can implement a project with
-      </h6>
-      <h6 class="grey-text" *ngIf="skill.status == 2">
-
+      <div *ngFor="let skill of info.skills">
+        <div class="col s12 m6 xl4" *ngIf="skill.category == cat">
+          <h6 style="margin-left:3px;">{{skill.name}}</h6>
+          <div class="progress">
+            <div class="determinate orange" [ngStyle]="{'width': skill.percent + '%'}">
+            </div>
+          </div>
+          <h6 class="grey-text" *ngIf="skill.status == 0">
+            Currently learning
+          </h6>
+          <h6 class="grey-text" *ngIf="skill.status == 1">
+            Can implement a project with
+          </h6>
+          <h6 class="grey-text" *ngIf="skill.status == 2">
             High knowledge
           </h6>
-      <div class="horizontal-line"></div>
-    </div>
-</div>
+          <div class="horizontal-line"></div>
+        </div>
+      </div>
+
+
+
+
+
+     </div>
+
+
   </div>
 </div>

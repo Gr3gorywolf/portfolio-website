@@ -22,20 +22,15 @@ sections: Array<Section> = [
     Id:'sec1'
   },
   {
-    Title: 'Programming and markup languajes',
+    Title: 'My skills',
     Icon: 'code',
     Id:'sec2'
-  },
-  {
-    Title: 'Technologies and frameworks',
-    Icon: 'build',
-    Id:'sec3'
   }
   ,
   {
     Title: 'Education',
     Icon: 'school',
-    Id:'sec4'
+    Id:'sec3'
   }
 ]
 

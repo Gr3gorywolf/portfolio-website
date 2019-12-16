@@ -5,6 +5,7 @@ import { ProjectService } from 'src/app/shared/services/project.service';
 import { UiService } from 'src/app/shared/services/ui.service';
 import { HttpClient } from '@angular/common/http';
 import { ProjectHelper } from 'src/app/shared/helpers/ProjectHelper';
+import { Section } from 'src/app/shared/models/section';
 
 declare var $: any;
 @Component({
@@ -17,6 +18,19 @@ export class ProjectInfoComponent implements OnInit {
   projectCommits: Array<any> = null;
   helper: ProjectHelper = new ProjectHelper();
   isLoadingCommits: boolean = true;
+  sections: Array<Section> = [
+    {
+      Icon: "image"
+      , Id: "sec0"
+      , Title: "Project gallery"
+    },
+    {
+      Icon: "history"
+      , Id: "sec1"
+      , Title: "Commits history"
+    }
+  ]
+
   constructor(public router: Router, public projectService: ProjectService, public Ui: UiService, public client: HttpClient) { }
   ngOnInit() {
     setTimeout(() => {

@@ -4,11 +4,15 @@
   width: 70%;
 }
 
+
 @media (max-width: 480px){
   .resume-content{
     margin-left: 5%;
     margin-right: 5%;
     width: 90%;
+  }
+  .parallax-container{
+    height:350px;
   }
 
 }

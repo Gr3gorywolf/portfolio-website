@@ -1,4 +1,4 @@
-<div class="parallax-container" style="margin-top:-35px;height:350px;">
+<div class="parallax-container" style="margin-top:-35px;">
   <div class="parallax" materialize="parallax">
     <img src="assets/img/background.jpg" alt="">
   </div>
@@ -12,9 +12,13 @@
 
     <!-- contenttt-->
 
-    <h6 class="center">
-      <i class=" material-icons white-text" style="font-size:55px;margin-top:20px;"
-        id="{{ sections[1].Id }}">{{ sections[1].Icon }}</i>
+    <h6 class="center" id="{{ sections[1].Id }}">
+      <i class=" material-icons white-text hide" style="font-size:55px;margin-top:20px;"
+        >{{ sections[1].Icon }}</i>
+
+        <div  style="height:400px;margin-top:50px">
+          <app-gregory></app-gregory>
+        </div>
       <h4 class="white-text">{{ sections[1].Title }}</h4>
     </h6>
 
@@ -30,22 +34,20 @@
 
     </h5>
 
-    <h6 class="center">
-      <i class=" material-icons white-text" style="font-size:55px;margin-top:20px;"
-        id="{{ sections[2].Id }}">{{ sections[2].Icon }}</i>
+    <h6 class="center"  id="{{ sections[2].Id }}">
+      <i class=" material-icons white-text hide" style="font-size:55px;margin-top:20px;"
+       >{{ sections[2].Icon }}</i>
+        <div  style="height:400px;margin-top:50px">
+          <app-gregoryscroll></app-gregoryscroll>
+        </div>
       <h4 class="white-text">{{ sections[2].Title }}</h4>
     </h6>
-    <app-personal-skills-card [info]="info" [category]="'languaje'"></app-personal-skills-card>
+
+    <app-personal-skills-card [info]="info"></app-personal-skills-card>
     <h6 class="center">
       <i class=" material-icons white-text" style="font-size:55px;margin-top:20px;"
         id="{{ sections[3].Id }}">{{ sections[3].Icon }}</i>
       <h4 class="white-text">{{ sections[3].Title}}</h4>
-    </h6>
-    <app-personal-skills-card [info]="info" [category]="'framework'"></app-personal-skills-card>
-    <h6 class="center">
-      <i class=" material-icons white-text" style="font-size:55px;margin-top:20px;"
-        id="{{ sections[4].Id }}">{{ sections[4].Icon }}</i>
-      <h4 class="white-text">{{ sections[4].Title}}</h4>
     </h6>
     <app-timeline [studies]="info.studies"></app-timeline>
   </div>

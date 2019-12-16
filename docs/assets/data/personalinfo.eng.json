@@ -17,9 +17,21 @@
 "skills":[
 {
     "category": "languaje",
-    "name":"HTML,CSS,JS",
-    "percent":"85",
+    "name":"HTML5",
+    "percent":"75",
     "status":"2"
+},
+{
+  "category": "languaje",
+  "name":"CSS3",
+  "percent":"70",
+  "status":"2"
+},
+{
+  "category": "languaje",
+  "name":"XAML",
+  "percent":"80",
+  "status":"2"
 },
 {
     "category": "languaje",
@@ -30,8 +42,14 @@
 {
     "category": "languaje",
     "name":"JavaScript",
-    "percent":"65",
+    "percent":"75",
     "status":"1"
+},
+{
+  "category": "languaje",
+  "name":"TypeScript",
+  "percent":"75",
+  "status":"1"
 },
 {
     "category": "languaje",
