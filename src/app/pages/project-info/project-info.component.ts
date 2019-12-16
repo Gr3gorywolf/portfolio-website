@@ -20,13 +20,18 @@ export class ProjectInfoComponent implements OnInit {
   isLoadingCommits: boolean = true;
   sections: Array<Section> = [
     {
-      Icon: "image"
+      Icon: "info"
       , Id: "sec0"
+      , Title: "Project overview"
+    },
+    {
+      Icon: "image"
+      , Id: "sec1"
       , Title: "Project gallery"
     },
     {
       Icon: "history"
-      , Id: "sec1"
+      , Id: "sec2"
       , Title: "Commits history"
     }
   ]
