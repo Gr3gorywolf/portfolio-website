@@ -123,6 +123,12 @@
     "status":"2"
 },
 {
+  "category": "framework",
+  "name":"Native android",
+  "percent":"70",
+  "status":"1"
+},
+{
     "category": "framework",
     "name":"Flutter SDK",
     "percent":"50",
