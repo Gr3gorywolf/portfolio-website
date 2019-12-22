@@ -23,16 +23,14 @@
     </h6>
 
 
-    <h5 class="white-text" style="font-size:20px;">
-      Hello. My name is Gregory Alexander Cabral De Los santos and im fullstack developer that really loves to learn new
-      things and make my ideas come true
-      im sort of polyglot because i can be adapted easily to every languaje and technology that is required for every
-      kind of project. <br> <br>
-      Actually I develop aplications for every kind of platform such as web,mobile desktop... etc. For every platform I
-      have the knowledge of an related technology
-      to develop the assigned project
+    <p class="white-text" style="font-size:20px;">
+      Hello. My name is Gregory Alexander Cabral De Los santos and im fullstack developer that really loves to learn new things and make my ideas and dreams come true I consider myself as an ninja developer because i can be adapted easily to every programming languaje or technology  required for every kind of project.
 
-    </h5>
+      Actually I develop aplications for multiple platforms such as web,mobile desktop... etc. For every platform I have the knowledge of an related technology to develop the assigned project.
+
+      I Usually  invest my free time developing and maintaining my personal projects because I am always learning new things and I think that the best way to learn something practicing it.
+
+    </p>
 
     <h6 class="center"  id="{{ sections[2].Id }}">
       <i class=" material-icons white-text hide" style="font-size:55px;margin-top:20px;"
@@ -50,6 +48,15 @@
       <h4 class="white-text">{{ sections[3].Title}}</h4>
     </h6>
     <app-timeline [studies]="info.studies"></app-timeline>
+
+
+    <h6 class="center">
+      <i class=" material-icons white-text" style="font-size:55px;margin-top:20px;"
+        id="{{ sections[4].Id }}">{{ sections[4].Icon }}</i>
+      <h4 class="white-text">{{ sections[4].Title}}</h4>
+    </h6>
+    <app-timeline [professionalExperience]="info.professional_experience"></app-timeline>
+
   </div>
 </div>
 <app-floating-navigator [sections]="sections"></app-floating-navigator>

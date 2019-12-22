@@ -23,7 +23,7 @@ export class FloatingNavigatorComponent implements OnInit {
   scrollToSection(sectionId) {
     console.log("xd");
 
-
+    $('.material-tooltip').css("visibility", "hidden");
 
     $([document.documentElement, document.body]).animate({
       scrollTop: $('#' + sectionId).offset().top - 70

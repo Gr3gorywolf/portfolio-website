@@ -3,7 +3,6 @@
 "name":"Gregory Alexander Cabral De Los Santos",
 "age":"20",
 "country":"La Romana,Dominican Republic",
-"address":"Barrio De Los Maestro calle B edificio B1",
 "email":"gregoryalexandercabral@gmail.com",
 "phone":"+1 829-325-1377",
 "social":{
@@ -132,33 +131,60 @@
 ],
 "studies":[
    {
-     "title":"Basic/advanced english",
+     "title":"Basic / Advanced english",
      "location":"Dominico americano",
      "daterange":"January 2017 - September 2018",
-     "degree":"Other"
+     "degree":"Other",
+     "image":"assets/img/dominico_americano.png"
    },
    {
     "title":"Software engineering",
     "location":"Universidad dominicana O&M",
     "daterange":"January 2017 - Present",
-    "degree":"Engineer’s Degree"
+    "degree":"Engineer’s Degree",
+    "image":"assets/img/oym.jpg"
+  },
+  {
+    "title":"Basic c#",
+    "location":"Alianza Juvenil",
+    "daterange":"March 2015 - July 2015",
+    "degree":"Other",
+    "image":"assets/img/Logo-Alianza.jpg"
   },
   {
     "title":"Office packpage and basic operating systems usage",
     "location":"Alianza Juvenil",
     "daterange":"February 2014 - November 2014",
-    "degree":"Other"
+    "degree":"Other",
+    "image":"assets/img/Logo-Alianza.jpg"
   },
   {
     "title":"Highschool ",
     "location":"Calasanz San Eduardo",
     "daterange":"January 2010 - August 2016",
-    "degree":"Bachelor’s Degree"
+    "degree":"Bachelor’s Degree",
+    "image":"assets/img/calasanz_logo.png"
   }
 
 
 ],
 "professional_experience":[
+  {
+    "position":"Fullstack developer",
+    "location":"Banmovil EIRL",
+    "daterange":"June 2019 - Actual",
+    "description":"In this company I started working as mobile developer. Then I learned php and laravel to help to the backend development. \n In this company I developed an ios version of their app and fixed several bugs on their main app",
+    "image":"assets/img/banmovil.png"
+  },
+  {
+    "position":"Support service",
+    "location":" Computesa TGV",
+    "daterange":"October 2016 - December 2016",
+    "description":"In this company I worked repairing computers and printing documents",
+    "image":"assets/img/computesa.jpg"
+  }
+
+
 
 ]
 

@@ -1,6 +1,6 @@
 [{
     "name": "Multitube",
-    "description": "Multi modules application that allows you to stream and download videos from youtube and even more!.",
+    "description": "Multi modules application that allows you to stream and download videos from youtube and more!.",
     "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/mipmap-xxxhdpi/ic_launcher.png",
     "portrait": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/drawable/logo.png",
     "platform": 0,
@@ -60,7 +60,7 @@
   },
   {
     "name": "Glutter Chat",
-    "description": "Multi server chat application that has bot assistence,server creation/customization and much more!.",
+    "description": "Multi server chat application that has bot assistence,server creation/customization and more!.",
     "logo": "assets/img/GlutterChatLauncher.png",
     "portrait": "",
     "platform": 0,
@@ -107,7 +107,7 @@
   },
   {
     "name": "Multitube webhelper",
-    "description": "An easier way to connect to streamings servers without enter servers ip and ports the only thing that you need to do is scan a QR code!",
+    "description": "An easier way to connect to multutitube's streaming server without enter server ip and ports by scanning an QR code",
     "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/mipmap-xxxhdpi/ic_launcher_foreground.png",
     "portrait": "https://multitubewebhelper.gregoryc.dev/img/logo.png",
     "platform": 1,

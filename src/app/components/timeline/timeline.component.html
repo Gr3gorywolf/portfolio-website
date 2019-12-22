@@ -22,13 +22,37 @@
       <div class="card timeline-content " style="border-radius:45px;">
 
         <div class="card-content">
-
+          <img class="r  left" style="height:60px;width:60px;margin:5px;" src="{{ stu.image  }}">
           <span class="card-title  orange-text " style="font-size:18px;">{{ stu.daterange }}</span>
           <span class="card-title " style="font-size:25px;">{{ stu.title}}</span>
           <p class="truncate grey-text">
 
             {{ stu.location }}
            </p>
+        </div>
+      </div>
+      <div class="timeline-badge orange white-text"><i class="material-icons">adjust</i></div>
+    </div>
+</div>
+
+
+<!--Working Experience-->
+<div class="timeline" *ngIf="this.professionalExperience!=null">
+  <div class="timeline-event" *ngFor="let exp of this.professionalExperience">
+      <div class="card timeline-content " style="border-radius:45px;">
+
+        <div class="card-content">
+          <img class="r circle left" style="height:60px;width:60px;margin:5px;" src="{{ exp.image  }}">
+          <span class="card-title  orange-text " style="font-size:20px;">{{ exp.daterange }}</span>
+          <span class="card-title " style="font-size:20px;">{{ exp.position}}</span>
+          <p class="truncate grey-text">
+
+            {{ exp.location }}
+           </p>
+          <p>
+            {{ exp.description }}
+          </p>
+
         </div>
       </div>
       <div class="timeline-badge orange white-text"><i class="material-icons">adjust</i></div>

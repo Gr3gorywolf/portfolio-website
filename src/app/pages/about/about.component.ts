@@ -32,6 +32,12 @@ sections: Array<Section> = [
     Icon: 'school',
     Id:'sec3'
   }
+  ,
+  {
+    Title: 'Working experience',
+    Icon: 'work',
+    Id:'sec4'
+  }
 ]
 
   constructor(public UI:UiService) { }

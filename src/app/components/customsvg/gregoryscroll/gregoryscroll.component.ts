@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 declare var $: any;
 @Component({
   selector: 'app-gregoryscroll',
   templateUrl: './gregoryscroll.component.html',
   styleUrls: ['./gregoryscroll.component.css']
 })
-export class GregoryscrollComponent implements OnInit {
+export class GregoryscrollComponent implements OnInit, OnDestroy {
 
   constructor() { }
   index = 0;
@@ -55,9 +55,13 @@ export class GregoryscrollComponent implements OnInit {
 
 
   languaje: string;
+  intervalId: any;
+  ngOnDestroy() {
+    clearInterval(this.intervalId);
+  }
   ngOnInit() {
     $(".cls-30").css("fill", "white");
-    setInterval(() => {
+    this.intervalId =    setInterval(() => {
       if (this.index < this.languajeList.length) {
         this.index++;
       } else {
@@ -65,7 +69,6 @@ export class GregoryscrollComponent implements OnInit {
       }
       let languajeItem = this.languajeList[this.index];
       this.languaje = languajeItem.name;
-
       $(".cls-26").css("fill", languajeItem.colorPrimary);
       $(".cls-27").css("fill", languajeItem.colorSecondary);
     }, 1000)
