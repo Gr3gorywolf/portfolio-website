@@ -144,7 +144,7 @@
      "image":"assets/img/dominico_americano.png"
    },
    {
-    "title":"Software engineering",
+    "title":"Systems engineering",
     "location":"Universidad dominicana O&M",
     "daterange":"January 2017 - Present",
     "degree":"Engineer’s Degree",
@@ -179,7 +179,7 @@
     "position":"Fullstack developer",
     "location":"Banmovil EIRL",
     "daterange":"June 2019 - Actual",
-    "description":"In this company I started working as mobile developer. Then I learned php and laravel to help to the backend development. \n In this company I developed an ios version of their app and fixed several bugs on their main app",
+    "description":"In this company I started working as <b>mobile developer</b>. Then I learned <b>PHP</b> and <b>Laravel</b> to help in the backend development. \nAlso I developed an <b>IOS</b> version of their app and fixed several bugs on their main app",
     "image":"assets/img/banmovil.png"
   },
   {

@@ -45,12 +45,12 @@
           <img class="r circle left" style="height:60px;width:60px;margin:5px;" src="{{ exp.image  }}">
           <span class="card-title  orange-text " style="font-size:20px;">{{ exp.daterange }}</span>
           <span class="card-title " style="font-size:20px;">{{ exp.position}}</span>
-          <p class="truncate grey-text">
+          <p class="truncate grey-text" >
 
             {{ exp.location }}
            </p>
-          <p>
-            {{ exp.description }}
+          <p [innerHtml]="exp.description">
+
           </p>
 
         </div>
