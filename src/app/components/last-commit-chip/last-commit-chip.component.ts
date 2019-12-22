@@ -1,6 +1,7 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { ProjectHelper } from 'src/app/shared/helpers/ProjectHelper';
 import { HttpClient } from '@angular/common/http';
+import { DatePipe, formatDate } from '@angular/common';
 
 @Component({
   selector: 'app-last-commit-chip',
@@ -26,4 +27,9 @@ export class LastCommitChipComponent implements OnInit {
         }
       });
   }
+getHintTitle(lastCommit){
+  let pipe = new DatePipe('en-US');
+  return 'By: '+lastCommit.commit.author.name+'\n at '+ pipe.transform(lastCommit.commit.author.date);
+}
+
 }

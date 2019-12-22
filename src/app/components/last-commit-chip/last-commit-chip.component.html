@@ -1,6 +1,6 @@
 <app-preloader *ngIf="lastCommit==null" [size]="'small'"></app-preloader>
 <a href="{{ lastCommit.html_url }}" target="_blank" *ngIf="lastCommit!=null">
-<div class="chip white hoverable animated flipInX slower delay-1s" >
+<div class="chip white hoverable animated fadeIn slower delay-1s"  materialize="tooltip" data-position="top" [materializeParams]="[{tooltip:getHintTitle(lastCommit)}]" >
   <img src="{{ lastCommit.author.avatar_url}}" alt="Contact Person">
   <h6 class="truncate" style="max-width:250px;"> {{ lastCommit.commit.message  }}</h6>
 </div>
