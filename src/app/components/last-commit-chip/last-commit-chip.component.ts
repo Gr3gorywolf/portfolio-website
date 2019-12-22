@@ -12,6 +12,7 @@ export class LastCommitChipComponent implements OnInit {
   @Input() repository:string;
   helper:ProjectHelper=new ProjectHelper();
   lastCommit:any;
+  hasError:boolean = false;
   constructor(public client: HttpClient) { }
 
   ngOnInit() {
@@ -25,7 +26,11 @@ export class LastCommitChipComponent implements OnInit {
         if (data.length > 0) {
           this.lastCommit = data[0];
         }
-      });
+      },
+      (err:any)=>{
+           this.hasError = true;
+      }
+      );
   }
 getHintTitle(lastCommit){
   let pipe = new DatePipe('en-US');
