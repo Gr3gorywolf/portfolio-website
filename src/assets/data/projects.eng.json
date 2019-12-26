@@ -1,8 +1,8 @@
 [{
     "name": "Multitube",
     "description": "Multi modules application that allows you to stream and download videos from youtube and more!.",
-    "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/mipmap-xxxhdpi/ic_launcher.png",
-    "portrait": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/drawable/logo.png",
+    "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/src/Resources/mipmap-xxxhdpi/ic_launcher.png",
+    "portrait": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/src/Resources/drawable/logo.png",
     "platform": 0,
     "repository": "https://github.com/Gr3gorywolf/Multitube.android",
     "website": "https://multitube.gregoryc.dev",
@@ -108,7 +108,7 @@
   {
     "name": "Multitube webhelper",
     "description": "An easier way to connect to multutitube's streaming server without enter server ip and ports by scanning an QR code",
-    "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/mipmap-xxxhdpi/ic_launcher_foreground.png",
+    "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/src/Resources/mipmap-xxxhdpi/ic_launcher_foreground.png",
     "portrait": "https://multitubewebhelper.gregoryc.dev/img/logo.png",
     "platform": 1,
     "repository": "https://github.com/Gr3gorywolf/Multitubewebhelper",
@@ -145,7 +145,7 @@
   {
     "name": "Multitube desktop",
     "description": "Youtube desktop client that allows you to download/stream media from youtube and also can be controlled with the muultitube mobile app",
-    "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/App1/Resources/mipmap-xxxhdpi/ic_launcher_foreground.png",
+    "logo": "https://raw.githubusercontent.com/Gr3gorywolf/Multitube.android/master/src/Resources/mipmap-xxxhdpi/ic_launcher_foreground.png",
     "portrait": "assets/img/multitubedesktop.png",
     "platform": 2,
     "repository": "https://github.com/Gr3gorywolf/multitube-desktop",
