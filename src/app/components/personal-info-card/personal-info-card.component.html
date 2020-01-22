@@ -14,9 +14,9 @@
       <h5 class="grey-text">Fullstack developer</h5>
       <div class="horizontal-line"></div>
       <ul class="profile-list">
-        <li class="clearfix">
+        <li class="clearfix" *ngIf="serverDateTime != null">
           <strong class="black-text title">Age</strong>
-          <span class="grey-text content">{{info.age}}</span>
+          <span class="grey-text content">{{getAge()}}</span>
         </li>
         <li class="clearfix">
           <strong class="black-text title">Country</strong>
@@ -34,7 +34,7 @@
 
 
       </ul>
-      
+
     </div>
   </div>
   <h6 class="center col s12">

@@ -14,10 +14,14 @@ export class PersonalSkillsCardComponent implements OnInit {
     "framework",
   ]
   @Input() info:any;
+  public skills:Array<any> = [];
 
   constructor() { }
 
   ngOnInit() {
+   this.skills = this.info.skills.sort((a,b)=>{
+     return b.status - a.status;
+   });
   }
 
 }

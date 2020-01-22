@@ -1,13 +1,7 @@
 <div class="card white" style="border-radius:25px;padding:5px">
 
-
-
-
-
   <div class="card-content row">
      <div *ngFor="let cat of categories">
-
-
       <div class="col s12" style="margin-top:20px;margin-bottom:20px">
         <h5 class="center hide"> <i class="material-icons black-text" style="font-size:80px;">code</i></h5>
       <h5 class="center black-text" *ngIf="cat == 'languaje'"> Programming and markup languajes </h5>
@@ -15,7 +9,7 @@
       <div class="horizontal-line grey"></div>
       </div>
 
-      <div *ngFor="let skill of info.skills">
+      <div *ngFor="let skill of skills">
         <div class="col s12 m6 xl4" *ngIf="skill.category == cat">
           <h6 style="margin-left:3px;">{{skill.name}}</h6>
           <div class="progress">
@@ -34,13 +28,6 @@
           <div class="horizontal-line"></div>
         </div>
       </div>
-
-
-
-
-
      </div>
-
-
   </div>
 </div>
