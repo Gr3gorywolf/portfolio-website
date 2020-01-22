@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { UiService } from 'src/app/shared/services/ui.service';
 
 @Component({
   selector: 'app-personal-info-card',
@@ -7,10 +8,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PersonalInfoCardComponent implements OnInit {
 @Input() info:any;
-  constructor() { }
+  constructor(private UI:UiService) { }
 
   ngOnInit() {
-
+    
   }
 
 

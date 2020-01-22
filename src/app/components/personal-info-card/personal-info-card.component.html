@@ -1,53 +1,52 @@
 <div class="card floating-card profile-card animated slideInUp">
-        <div class="card-content row">
-          <div class="col s12 m12 l5 hide">
+  <div class="card-content row">
+    <div class="col s12 m12 l5">
 
-            <h6 class="center">
-              <div class="profile-photo">
-              <img src="assets/img/profilePhoto.jpeg" alt="" style="height:385px;border-radius:10px;border:1px;" >
-            </div>
-            </h6>
-          </div>
-          <div class="col s12">
-<h6 class="center">
-            <img src="assets/img/profilePhoto.jpeg"  alt="" style="height:200px;width:200px;border-radius:50%;border:1px;" >
-          </h6>
-            <h4>I'm <strong> {{info.name}}</strong></h4>
-            <h5 class="grey-text">Fullstack developer</h5>
-            <div class="horizontal-line"></div>
-            <ul class="profile-list">
-              <li class="clearfix">
-                <strong class="black-text title">Age</strong>
-                <span class="grey-text content">{{info.age}}</span>
-              </li>
-              <li class="clearfix">
-                      <strong class="black-text title">Country</strong>
-                      <span class="grey-text content">{{info.country}}</span>
-                    </li>
+      <h6 class="center">
+        <div class="profile-photo" >
+          <img src="assets/img/profile.jpg" alt=""  >
 
-              <li class="clearfix">
-                <strong class="black-text title">E-Mail</strong>
-                <span class="grey-text content">{{info.email}}</span>
-              </li>
-              <li class="clearfix">
-                <strong class="black-text title">Phone</strong>
-                <span class="grey-text content">{{info.phone}}</span>
-              </li>
-
-
-            </ul>
-            <h6 class="center ">
-              <div class="btn white orange-text" (click)="downloadResume()" style="border-radius:25px;">download resume</div>
-            </h6>
-          </div>
         </div>
-        <div class="card-action col s12">
-          <h6 class="center">
-            <a href="{{info.social.facebook}}" target="_blank" class="fa fa-facebook white-text"></a>
-            <a href="{{info.social.instagram}}" target="_blank" class="fa fa-instagram white-text"></a>
-            <a href="{{info.social.github}}" target="_blank" class="fa fa-github white-text"></a>
-            <a href="{{info.social.linkedin}}" target="_blank" class="fa fa-linkedin white-text"></a>
-            <a href="{{info.social.twitch}}" target="_blank" class="fa fa-twitch white-text"></a>
-          </h6>
-        </div>
-      </div>
+      </h6>
+    </div>
+    <div class="col s12 m12 l7">
+      <h4>I'm <strong> {{info.name}}</strong></h4>
+      <h5 class="grey-text">Fullstack developer</h5>
+      <div class="horizontal-line"></div>
+      <ul class="profile-list">
+        <li class="clearfix">
+          <strong class="black-text title">Age</strong>
+          <span class="grey-text content">{{info.age}}</span>
+        </li>
+        <li class="clearfix">
+          <strong class="black-text title">Country</strong>
+          <span class="grey-text content">{{info.country}}</span>
+        </li>
+
+        <li class="clearfix">
+          <strong class="black-text title">E-Mail</strong>
+          <span class="grey-text content">{{info.email}}</span>
+        </li>
+        <li class="clearfix">
+          <strong class="black-text title">Phone</strong>
+          <span class="grey-text content">{{info.phone}}</span>
+        </li>
+
+
+      </ul>
+      
+    </div>
+  </div>
+  <h6 class="center col s12">
+    <div class="btn white orange-text" (click)="downloadResume()" style="border-radius:25px;margin-bottom:10px;margin-top:-30px;">download resume</div>
+  </h6>
+  <div class="card-action col s12">
+    <h6 class="center">
+      <a href="{{info.social.facebook}}" target="_blank" class="fa fa-facebook white-text"></a>
+      <a href="{{info.social.instagram}}" target="_blank" class="fa fa-instagram white-text"></a>
+      <a href="{{info.social.github}}" target="_blank" class="fa fa-github white-text"></a>
+      <a href="{{info.social.linkedin}}" target="_blank" class="fa fa-linkedin white-text"></a>
+      <a href="{{info.social.twitch}}" target="_blank" class="fa fa-twitch white-text"></a>
+    </h6>
+  </div>
+</div>

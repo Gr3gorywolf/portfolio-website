@@ -14,7 +14,11 @@
 
 .profile-photo img {
   width: 100%;
+  margin-top:19px;
   display: block;
+  height:285px;
+  border-radius:10px;
+  border:1px;
 }
 
 .section-about .profile-photo {
@@ -95,7 +99,9 @@
 
 
 @media (max-width: 992px) {
-
+  .profile-photo img {
+    margin-top:0px;
+  }
   .section-about .profile-photo {
     margin-right: 0;
     margin-bottom: 30px;
@@ -113,6 +119,13 @@
 
 @media (max-width: 767px) {
 
+
+
+
+  .profile-photo img {
+    margin-top:0px;
+  }
+  
   .profile-info {
     text-align: center;
   }

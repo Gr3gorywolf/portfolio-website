@@ -93,6 +93,12 @@
     "status":"1"
 },
 {
+  "category": "framework",
+  "name":"Vuejs",
+  "percent":"50",
+  "status":"0"
+},
+{
     "category": "framework",
     "name":"MaterializeCSS",
     "percent":"90",
