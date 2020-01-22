@@ -17,9 +17,8 @@ export class PersonalInfoCardComponent implements OnInit {
     this.loadCurrentDate();
   }
   loadCurrentDate() {
-    this.client.get("http://worldclockapi.com/api/json/utc/now").subscribe((res: any) => {
-      console.log(res);
-      this.serverDateTime = new Date(res.currentDateTime);
+    this.client.get("/",{observe: 'response',responseType:"text"}).subscribe((res: any) => {
+      this.serverDateTime = new Date(res.headers.get('Date'));
     });
   }
   getAge() {
