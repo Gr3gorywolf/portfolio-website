@@ -12,7 +12,7 @@
     "linkedin": "https://www.linkedin.com/in/gregory-alexander-cabral-de-los-santos-79835614b/",
     "twitch": "https://www.twitch.tv/gregorywolf123"
   },
-  "resume_download_link": "assets/Curriculum vitae Gregory Cabral.pdf",
+  "resume_download_link": "assets/Resume Gregory Cabral.pdf",
   "skills": [{
       "category": "languaje",
       "name": "HTML5",
@@ -99,6 +99,12 @@
     },
     {
       "category": "framework",
+      "name": "React",
+      "percent": "70",
+      "status": "2"
+    },
+    {
+      "category": "framework",
       "name": "MaterializeCSS",
       "percent": "90",
       "status": "2"
@@ -112,7 +118,7 @@
     {
       "category": "framework",
       "name": "Laravel",
-      "percent": "60",
+      "percent": "75",
       "status": "2"
     },
     {
@@ -150,7 +156,7 @@
     {
       "title": "Systems engineering",
       "location": "Universidad dominicana O&M",
-      "daterange": "January 2017 - Present",
+      "daterange": "January 2017 - October 2021",
       "degree": "Engineer’s Degree",
       "image": "assets/img/oym.jpg"
     },
@@ -181,14 +187,14 @@
   "professional_experience": [{
       "position": "Front-end developer",
       "location": "Version.do",
-      "daterange": "Octubre 2019 - Actual",
+      "daterange": "October 2019 - Present",
       "description": "Web application development using frontend frameworks such as <b>vue.js</b>, <b>angular</b> among other technologies.",
       "image": "assets/img/version.do.png"
     },
     {
       "position": "Fullstack developer",
       "location": "Banmovil EIRL",
-      "daterange": "June 2019 - Actual",
+      "daterange": "June 2019 - January 2020",
       "description": "In this company I started working as <b>mobile developer</b>. Then I learned <b>PHP</b> and <b>Laravel</b> to help in the backend development. \nAlso I developed an <b>IOS</b> version of their app and fixed several bugs on their main app",
       "image": "assets/img/banmovil.png"
     },
