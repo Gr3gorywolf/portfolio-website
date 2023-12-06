@@ -16,49 +16,55 @@
   "skills": [{
       "category": "languaje",
       "name": "HTML5",
-      "percent": "75",
-      "status": "2"
-    },
-    {
-      "category": "languaje",
-      "name": "CSS3",
-      "percent": "70",
-      "status": "2"
-    },
-    {
-      "category": "languaje",
-      "name": "XAML",
       "percent": "80",
       "status": "2"
     },
     {
       "category": "languaje",
-      "name": "C#",
-      "percent": "78",
+      "name": "JSX",
+      "percent": "80",
       "status": "2"
     },
     {
       "category": "languaje",
-      "name": "JavaScript",
-      "percent": "75",
+      "name": "CSS3",
+      "percent": "80",
+      "status": "2"
+    },
+    {
+      "category": "languaje",
+      "name": "XAML",
+      "percent": "60",
       "status": "1"
+    },
+    {
+      "category": "languaje",
+      "name": "C#",
+      "percent": "60",
+      "status": "1"
+    },
+    {
+      "category": "languaje",
+      "name": "JavaScript",
+      "percent": "80",
+      "status": "2"
     },
     {
       "category": "languaje",
       "name": "TypeScript",
-      "percent": "75",
-      "status": "1"
+      "percent": "80",
+      "status": "2"
     },
     {
       "category": "languaje",
       "name": "Dart",
-      "percent": "75",
+      "percent": "70",
       "status": "1"
     },
     {
       "category": "languaje",
       "name": "Php",
-      "percent": "67",
+      "percent": "80",
       "status": "1"
     },
     {
@@ -70,13 +76,13 @@
     {
       "category": "framework",
       "name": "Nodejs + Express",
-      "percent": "70",
+      "percent": "80",
       "status": "2"
     },
     {
       "category": "framework",
       "name": "Firebase",
-      "percent": "70",
+      "percent": "65",
       "status": "1"
     },
     {
@@ -100,7 +106,7 @@
     {
       "category": "framework",
       "name": "React",
-      "percent": "70",
+      "percent": "88",
       "status": "2"
     },
     {
@@ -111,20 +117,26 @@
     },
     {
       "category": "framework",
+      "name": "MUI",
+      "percent": "85",
+      "status": "2"
+    },
+    {
+      "category": "framework",
       "name": "Bootstrap",
-      "percent": "70",
-      "status": "1"
+      "percent": "80",
+      "status": "2"
     },
     {
       "category": "framework",
       "name": "Laravel",
-      "percent": "75",
+      "percent": "80",
       "status": "2"
     },
     {
       "category": "framework",
       "name": "Xamarin.Android",
-      "percent": "80",
+      "percent": "70",
       "status": "1"
     },
     {
@@ -136,13 +148,13 @@
     {
       "category": "framework",
       "name": "Native android",
-      "percent": "50",
+      "percent": "60",
       "status": "1"
     },
     {
       "category": "framework",
       "name": "Flutter SDK",
-      "percent": "75",
+      "percent": "80",
       "status": "2"
     }
   ],
@@ -184,10 +196,18 @@
 
 
   ],
-  "professional_experience": [{
+  "professional_experience": [
+    {
+      "position": "Front-end developer",
+      "location": "Newtech S.R.L",
+      "daterange": "March 2022 - November 2023",
+      "description": "Web application development using <b>React</b> and its library ecosystem. In this company I did several refactors and also ported all the project’s libraries and apps into a <b>nx monorepo</b>.",
+      "image": "assets/img/newtechsa_logo.jpg"
+    },
+    {
       "position": "Front-end developer",
       "location": "Version.do",
-      "daterange": "October 2019 - Present",
+      "daterange": "October 2019 - March 2022",
       "description": "Web application development using frontend frameworks such as <b>vue.js</b>, <b>angular</b> among other technologies.",
       "image": "assets/img/version.do.png"
     },
