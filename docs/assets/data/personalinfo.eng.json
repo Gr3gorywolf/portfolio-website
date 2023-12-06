@@ -106,6 +106,12 @@
     {
       "category": "framework",
       "name": "React",
+      "percent": "75",
+      "status": "2"
+    },
+    {
+      "category": "framework",
+      "name": "NextJS",
       "percent": "88",
       "status": "2"
     },
