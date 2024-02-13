@@ -12,7 +12,7 @@
     "linkedin": "https://www.linkedin.com/in/gregory-alexander-cabral-de-los-santos-79835614b/",
     "twitch": "https://www.twitch.tv/gregorywolf123"
   },
-  "resume_download_link": "assets/Resume Gregory Cabral.pdf",
+  "resume_download_link": "assets/Gregory Cabral.pdf",
   "skills": [{
       "category": "languaje",
       "name": "HTML5",
@@ -206,7 +206,7 @@
     {
       "position": "Front-end developer",
       "location": "Newtech S.R.L",
-      "daterange": "March 2022 - November 2023",
+      "daterange": "March 2022 - December 2023",
       "description": "Web application development using <b>React</b> and its library ecosystem. In this company I did several refactors and also ported all the project’s libraries and apps into a <b>nx monorepo</b>.",
       "image": "assets/img/newtechsa_logo.jpg"
     },
@@ -220,9 +220,16 @@
     {
       "position": "Fullstack developer",
       "location": "Banmovil EIRL",
-      "daterange": "June 2019 - January 2020",
+      "daterange": "July 2019 - January 2020",
       "description": "In this company I started working as <b>mobile developer</b>. Then I learned <b>PHP</b> and <b>Laravel</b> to help in the backend development. \nAlso I developed an <b>IOS</b> version of their app and fixed several bugs on their main app",
       "image": "assets/img/banmovil.png"
+    },
+    {
+      "position": "Fullstack developer",
+      "location": " Self-Employee Freelancer",
+      "daterange": "January 2018 - October 2019",
+      "description": "I have worked on several small projects, which helped me to grow up as a developer; those projects gave me the opportunity to learn several frontend/backend frameworks and libraries.",
+      "image": "assets/img/freelance.png"
     },
     {
       "position": "Support service",
